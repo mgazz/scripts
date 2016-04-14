@@ -1,0 +1,18 @@
+#!/bin/bash -       
+#description     :docker machine install script
+#author          :Michele Gazzetti
+#date            :14.04.16
+#notes           :
+#==============================================================================
+
+### Variables
+
+### Script start
+
+sudo curl -L https://github.com/docker/machine/releases/download/v0.5.3/docker-machine_linux-amd64 > ~/bin/docker-machine
+
+chmod +x ~/bin/docker-machine 
+
+docker-machine version
+
+docker-machine ls
