@@ -1,0 +1,14 @@
+#!/bin/bash -       
+#description     :
+#author          :Michele Gazzetti
+#date            :16.04.16
+#notes           :
+#==============================================================================
+
+### Variables
+
+### Script start
+
+apt-cache showpkg linux-headers
+VERSION="4.4.0-18"
+sudo apt-get install linux-headers-"$VERSION" linux-headers-"$VERSION"-generic linux-image-"$VERSION"-generic --fix-missing 
