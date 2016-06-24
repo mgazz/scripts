@@ -1,0 +1,5 @@
+-
+ hosts: dev
+ tasks:
+  - name: restart
+    command: /develop/recompile.sh

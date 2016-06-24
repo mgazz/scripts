@@ -26,9 +26,9 @@ apt-cache policy docker-engine
 
 sudo apt-get update
 
-sudo apt-get install linux-image-extra-$(uname -r)
+sudo apt-get install linux-image-extra-$(uname -r) -y
 
-sudo apt-get install docker-engine
+sudo apt-get install docker-engine -y
 
 #sudo service docker start
 

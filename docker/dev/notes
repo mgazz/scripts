@@ -1,0 +1,15 @@
+# to correctly export CDEV details
+source ./cdev-details.sh
+
+## when you start
+./cdev-details.sh
+cd ./ans-dock-dev
+
+# in container
+mkdir -p ~/.ssh && echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMfOHu4N7IanpD2vWpz3b5BnE7N0r0hlyvSt8kAKD1ebXyl8vQuLzPLM41zgp1XryfE/nRfyj8jDa3+zHwP4tADYgRDDnem5eKlCJeqGM3mp/OKrCZ8OrZCmdMq+vekuNpCr+w3XQsnXZf6ZvbuahY9dahjaPhtE/Zw2d/6oc3iU3S/hxyGFP+Hftqwd1c/DFh/zO23fraCx8I29dYEfGlDmCEEfjmz2N4b+gNHcynDJYU+5NbehtAHaaBuox9O7MtKlU+10kTJuumrXkJm+ThfVNf9m9Am9jJ/mMmz1iFSZjBRT3R+b/5a5rAyVMyO5gIE8tbrhnABvhGBgM3y+m9 michele@michele-ThinkPad-T420"  >> ~/.ssh/authorized_keys && \
+    apt-get install vim openssh-server -y && \
+        service ssh start
+
+#in localhost
+ansible-playbook -s docker-dev-setup.yml -u root
+ansible-playbook -s recompile.yml -u root

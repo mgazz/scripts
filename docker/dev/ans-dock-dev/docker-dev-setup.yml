@@ -1,0 +1,8 @@
+-
+ hosts: dev
+ tasks:
+  - name: Creates directory develop
+    file: path=/develop state=directory mode=0755
+  - name: Copy restart script
+    action: copy src=../recompile.sh dest=/develop/
+  - file: path=/develop/recompile.sh owner=root group=root mode=0744
