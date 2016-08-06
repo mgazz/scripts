@@ -1,0 +1,28 @@
+#!/bin/bash -       
+#description     :
+#author          :Michele Gazzetti
+#date            :25.05.16
+#notes           :
+#==============================================================================
+
+### Variables
+
+### Script start
+
+#ansible setup https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-14-04
+#ansible tutorial: https://serversforhackers.com/an-ansible-tutorial
+#
+sudo apt-get update
+#
+sudo apt-get install software-properties-common -y
+#
+sudo apt-add-repository ppa:ansible/ansible -y
+#
+sudo apt-get update
+#
+sudo apt-get install ansible -y
+#
+sudo cp /etc/ansible/hosts /etc/ansible/hosts.orig
+#
+sudo touch /etc/ansible/hosts
+

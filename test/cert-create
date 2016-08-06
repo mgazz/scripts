@@ -1,0 +1,15 @@
+#!/bin/bash -       
+#description     :
+#author          :Michele Gazzetti
+#date            :09.06.16
+#notes           :
+#==============================================================================
+
+### custom certificate
+#
+sudo mkdir /etc/docker/certs.d
+#
+openssl genrsa -out client.key 4096
+#
+curl -X GET localhost:5000/v2/ubuntu/tags/list
+
