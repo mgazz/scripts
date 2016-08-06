@@ -1,0 +1,32 @@
+#!/bin/bash -       
+#description     : create common directory for docker certificates
+#author          :Michele Gazzetti
+#date            :27.06.16
+#notes           :
+#==============================================================================
+
+######
+#### Shared directory for kura certificates
+######
+#http://superuser.com/questions/19318/how-can-i-give-write-access-of-a-folder-to-all-users-in-linux
+# standard directory for kura certificates
+
+DIR="/opt/eclipse/kura"
+
+sudo mkdir -p "$DIR"/.docker/certs
+# allow access to kura users
+sudo groupadd kura
+# set corret permissions
+sudo usermod -a -G kura $USER
+
+if [[ -d "/opt/eclipse/kura_1.4.0_raspberry-pi-2"  ]]; then
+    DIR="/opt/eclipse/kura_1.4.0_raspberry-pi-2"
+fi
+
+sudo chgrp -R kura "$DIR"
+sudo chmod -R g+w "$DIR"
+# set GID stuff that I didn't quite understand
+sudo find "$DIR" -type d -exec chmod 2775 {} \; 
+sudo find "$DIR" -type f -exec chmod ug+rw {} \;
+# need to login again if I want to see the changes applyied
+#su $USER
