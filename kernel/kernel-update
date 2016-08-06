@@ -10,5 +10,5 @@
 ### Script start
 
 apt-cache showpkg linux-headers
-VERSION="4.4.0-18"
+VERSION="4.4.0-21"
 sudo apt-get install linux-headers-"$VERSION" linux-headers-"$VERSION"-generic linux-image-"$VERSION"-generic --fix-missing 
