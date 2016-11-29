@@ -1,0 +1,3767 @@
+    1  cd workspace/java/test/example-2/
+    2  ls
+    3  mvn clean package
+    4  vim .classpath 
+    5  vim .project 
+    6  ll
+    7  vim .project 
+    8  mvn clean install
+    9  cd ../../
+   10  ls
+   11  cd org.osgi.example/
+   12  ls
+   13  scp -r target/osgi-example-2-1.0.0.jar     pi@10.0.0.101:/home/pi/test-maven-build/test2
+   14  p
+   15  scp -r target/osgi-example-2-1.0.0.jar     pi@10.0.0.101:/home/pi/test-maven-build/test2
+   16  ssh pi@10.0.0.101
+   17  ssh pi@10.0.0.101
+   18  ls
+   19  mvn clean package
+   20  vim pom.xml 
+   21  mvn clean install
+   22  mvn clean package
+   23  mvn clean install
+   24  lck
+   25  ck
+   26  ock
+   27  cd ../
+   28  ls
+   29  cd base-images/
+   30  ls
+   31  cd systemd/
+   32  ls
+   33  cd armv7hf/
+   34  ls
+   35  cd jessie/
+   36  ls
+   37  vim Dockerfile 
+   38  ock
+   39  clear
+   40  vim 1_report 
+   41  vim ../plugins/plugins/
+   42  cd ../../org.osgi.example/
+   43  ls
+   44  clear
+   45  vim
+   46  tmux
+   47  /opt/eclipse/ecli
+   48  cd ../../plugins/plugins/
+   49  ls
+   50  scp -r /home/michele/workspace/java/plugins/plugins/org.osgi.example_1.0.0.201606151752.jar pi@10.0.0.101:/home/pi/test-eclipse-build
+   51  scp -r /home/michele/workspace/java/plugins/plugins/org.osgi.example_1.0.0.201606151752.jar pi@10.0.0.101:/home/pi/test-eclipse-build/
+   52  ssh pi@10.0.0.101
+   53  ock
+   54  curl -X POST http://10.0.0.101/services/hello
+   55  docker images
+   56  /bin/bash docker pull resin/armv7hf-systemd
+   57  docker pull resin/armv7hf-systemd
+   58  /bin/sh docker pull resin/armv7hf-systemd
+   59  PATH=/bin:/usr/bin/
+   60  echo $PATH 
+   61  docker pull resin/armv7hf-systemd
+   62  ock
+   63  /opt/eclipse/eclimd
+   64  /opt/eclipse/eclipse 
+   65  tmux attach-session
+   66  lsblk
+   67  cd workspace/
+   68  ls
+   69  cd tk1/
+   70  ls
+   71  cd L4T-custom-images/
+   72  ls
+   73  cd Linux_for_Tegra_tk1.docker/
+   74  ls
+   75  xmp
+   76  vim flash.sh 
+   77  vim flash_w_hostname.sh 
+   78  lsblk
+   79  ls
+   80  vim flash_w_hostname.sh 
+   81  lsblk | grep mmcblk0p1
+   82  vim flash_w_hostname.sh 
+   83  vim apply_binaries.sh 
+   84  ls
+   85  ss apply_binaries
+   86  vim flash.sh 
+   87  vim source_sync.sh 
+   88  ls
+   89  lsblk
+   90  vim flash.sh 
+   91  vim flash_w_hostname.sh 
+   92  ./flash_w_hostname.sh 
+   93  vim rootfs/etc/hostname 
+   94  vim flash_w_hostname.sh 
+   95  ./flash_w_hostname.sh gateway
+   96  vim flash.sh 
+   97  sudo ./flash_w_hostname.sh gateway
+   98  vim flash.sh 
+   99  ls
+  100  vim ardbeg.conf 
+  101  ls
+  102  vim flash.sh 
+  103  lsusb
+  104  lsusb | grep Nvidia
+  105  lsusb | grep nvidia
+  106  lsusb
+  107  dmesg | grep nvidia
+  108  dmesg | grep Nvidia
+  109  lsusb
+  110  dmesg | grep NVIDIA
+  111  lsusb
+  112  dmesg | grep NVIDIA
+  113  lsusb
+  114  clear
+  115  clear
+  116  cd wo
+  117  ls
+  118  cd java/
+  119  ls
+  120  cd org.osgi.example/
+  121  ls
+  122  vim 
+  123  sudo apt-get install gvim
+  124  sudo apt-get install vim-gnome
+  125  /opt/eclipse/eclipse 
+  126  which gvim
+  127  gvim
+  128  tmux
+  129  ssh pi@10.0.0.101
+  130  ./eth-to-wifi.sh 
+  131  ssh pi@10.0.0.101
+  132  scp -r /home/michele/workspace/java/plugins/plugins/org.osgi.example_1.0.0.201606161143.jar  pi@10.0.0.101:/home/pi/test-eclipse-build/
+  133  vim /etc/default/docker
+  134  sudo vim /etc/default/docker
+  135  cd workspace/java/
+  136  ls
+  137  mkdir dep
+  138  cd dep/
+  139  wget http://central.maven.org/maven2/com/github/docker-java/docker-java/3.0.0/docker-java-3.0.0.jar
+  140  ls
+  141  vim ../plugins/plugins/org.osgi.example_1.0.0.201606161315.jar 
+  142  cd java/org.osgi.example/
+  143  ls
+  144  ll
+  145  vim .classpath 
+  146  vim ../plugins/plugins/org.osgi.example_1.0.0.201606161336.jar 
+  147  rm -r ../plugins/plugins/*
+  148  vim ../plugins/plugins/org.osgi.example_1.0.0.201606161338.jar 
+  149  scp -r /home/michele/workspace/java/plugins/plugins/*  pi@10.0.0.101:/home/pi/docker-test
+  150  ll
+  151  cd ../plugins/plugins/
+  152  ls
+  153  cd ../dep/
+  154  wget http://central.maven.org/maven2/com/googlecode/lambdaj/lambdaj/2.3.3/lambdaj-2.3.3.jar
+  155  wgetw
+  156  wget http://central.maven.org/maven2/com/google/guava/guava-base/r03/guava-base-r03.jar
+  157  wget http://repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+  158  vim guava-18.0.pom 
+  159  cd ../../
+  160  git clone https://github.com/google/guava.git
+  161  cd guava/
+  162  ls
+  163  cd guava
+  164  ls
+  165  vim pom.xml 
+  166  ls
+  167  cd ..
+  168  cd guava-gwt/
+  169  ls
+  170  vim pom.xml 
+  171  cd ..
+  172  ls
+  173  vim pom.xml 
+  174  ls
+  175  cd guava
+  176  ls
+  177  vim pom.xml 
+  178  mvn clean package
+  179  ll
+  180  cd target/
+  181  ls
+  182  cd surefire/
+  183  ls
+  184  cd ..
+  185  cd generated-sources/
+  186  ls
+  187  cd ..
+  188  vim guava-20.0-SNAPSHOT.jar 
+  189  cd ../../../
+  190  ls
+  191  cd test/
+  192  ls
+  193  cd ..
+  194  ls
+  195  cd hazard/
+  196  ls
+  197  wget http://central.maven.org/maven2/be/fluid-it/microservice/bundle/microservice-bundle-core/0.1-10/microservice-bundle-core-0.1-10.jar
+  198  ls
+  199  vim microservice-bundle-core-0.1-10.jar 
+  200  rm microservice-bundle-core-0.1-10.jar 
+  201  wget http://central.maven.org/maven2/org/apache/geronimo/bundles/myfaces-bundle/2.0.9_1/myfaces-bundle-2.0.9_1.jar
+  202  vim myfaces-bundle-2.0.9_1.jar 
+  203  cd ..
+  204  git clone https://github.com/docker-java/docker-java.git
+  205  cd docker-java/
+  206  ls
+  207  git clean package
+  208  mvn clean package
+  209  cd target/
+  210  ls
+  211  vim docker-java-3.0.0-kostyasha-3-sources.jar 
+  212  ls
+  213  cd maven-archiver/
+  214  ls
+  215  cd ..
+  216  ls
+  217  cd generated-sources/
+  218  ls
+  219  vim annotations/
+  220  ls
+  221  tree
+  222  cd annotations/
+  223  ls
+  224  cd ../../
+  225  ls
+  226  tree
+  227  clear
+  228  ls
+  229  cd surefire-reports/
+  230  ls
+  231  c d..
+  232  cd ..
+  233  l
+  234  vim docker-java-3.0.0-kostyasha-3.jar 
+  235  ls
+  236  cd ..
+  237  ls
+  238  vim circle.
+  239  vim circle.sh 
+  240  vim travis-after-success.sh 
+  241  vim circle.yml 
+  242  mvn clean install
+  243  vim /home/michele/workspace/java/docker-java/target/failsafe-reports
+  244  vim pom.xml 
+  245  ps aux | grep docker
+  246  vim /etc/default/docker
+  247  sudo vim /etc/default/docker
+  248  sudo service docker restart
+  249  ps aux | grep docker
+  250  maven clean install
+  251  ls
+  252  cd ~/.docker/
+  253  ls
+  254  cd -
+  255  ls
+  256  ll
+  257  cd etc/
+  258  ls
+  259  cd certs/
+  260  ls
+  261  cd ..
+  262  ls
+  263  c d..
+  264  cd
+  265  cd -
+  266  cd ..
+  267  ls
+  268  tree src/
+  269  mvn clean insta;;
+  270  mvn clean install
+  271  vim com.github.dockerjava.client.DockerClientTest.beforeTest
+  272  ll
+  273  rm com.github.dockerjava.client.DockerClientTest.beforeTest 
+  274  ls
+  275  cd src/main/resources/
+  276  ls
+  277  vim docker-java.properties 
+  278  vim /var/lib/docker/
+  279  vim /etc/default/docker
+  280  cd /var/run/docker/
+  281  ls
+  282  docker images
+  283  DOCKER_OPTS="-H tcp://127.0.0.1:2375 -H unix:///var/run/docker.sock"
+  284  docker images
+  285  docker pull hello-world
+  286  ss Error\ in\ SSl
+  287  cd ../../
+  288  ss Error\ in\ SSl
+  289  ss Error\ in\ SSL
+  290  vim ./main/java/com/github/dockerjava/jaxrs/DockerCmdExecFactoryImpl.java
+  291  vim main/resources/docker-java.properties 
+  292  mvn clean install
+  293  cd ..
+  294  mvn clean install
+  295  vim /etc/default/docker
+  296  vim main/resources/docker-java.properties 
+  297  vim src/main/resources/docker-java.properties 
+  298  mvn clean install
+  299  vim ./src/main/java/com/github/dockerjava/jaxrs/DockerCmdExecFactoryImpl.java
+  300  mvn clean install
+  301  vim ./src/main/java/com/github/dockerjava/jaxrs/DockerCmdExecFactoryImpl.java
+  302  mvn clean install
+  303  vim ./src/main/java/com/github/dockerjava/jaxrs/DockerCmdExecFactoryImpl.java
+  304  mvn clean install
+  305  vim ./src/main/java/com/github/dockerjava/jaxrs/DockerCmdExecFactoryImpl.java
+  306  mvn clean install
+  307  ss
+  308  ll
+  309  clear
+  310  ls
+  311  vim circle.
+  312  vim circle.sh 
+  313  mvn clean install -DskipITs
+  314  openssl genrsa -aes256 -out ca-key.pem 4096
+  315  sc
+  316  ls
+  317  openssl genrsa -out server-key.pem 4096
+  318  sc
+  319  openssl req -subj "/CN=$HOST" -sha256 -new -key server-key.pem -out server.csr
+  320  sc
+  321  cd etc/
+  322  ls
+  323  vim docker-java-formatter.xml 
+  324  cd certs/
+  325  ls
+  326  cd ~
+  327  mkdir .docker
+  328  rm -r .docker
+  329  mkdir .
+  330  cd ~
+  331  sc
+  332  mkdir .docker
+  333  sc
+  334  echo 01 > ca.srl
+  335  sc
+  336  rm ca.srl 
+  337  cd .docker/
+  338  sc
+  339  oc
+  340  openssl genrsa -des3 -out ca-key.pem 2048
+  341  sc
+  342  openssl genrsa -des3 -out server-key.pem 2048
+  343  openssl req -new -key server-key.pem -out server.csr -config server-cert.txt
+  344  ls
+  345  openssl req -new -key server-key.pem -out server.csr -config server-cert.txt
+  346  openssl x509 -req -days 3650 -in server.csr -CA ca.pem -CAkey ca-key.pem -out server-cert.pem -extensions v3_req -extfile server-cert.txt
+  347  ls
+  348  oc
+  349  openssl req -new -x509 -days 3650 -key ca-key.pem -out ca.pem
+  350  sc
+  351  oc
+  352  openssl x509 -req -days 3650 -in server.csr -CA ca.pem -CAkey ca-key.pem -out server-cert.pem -extensions v3_req -extfile server-cert.txt
+  353  ls
+  354  echo 01 > ca.srl
+  355  sc
+  356  openssl x509 -req -days 3650 -in server.csr -CA ca.pem -CAkey ca-key.pem -out server-cert.pem -extensions v3_req -extfile server-cert.txt
+  357  sc
+  358  oc
+  359  openssl genrsa -des3 -out key.pem 2048
+  360  sc
+  361  oc
+  362  openssl req -subj '/CN=client' -new -key key.pem -out client.csr
+  363  sc
+  364  echo extendedKeyUsage = clientAuth > extfile.cnf
+  365  sc
+  366  openssl x509 -req -days 3650 -in client.csr -CA ca.pem -CAkey ca-key.pem -out cert.pem -extfile extfile.cnf
+  367  sc
+  368  openssl rsa -in server-key.pem -out server-key.pem
+  369  sc
+  370  openssl rsa -in key.pem -out key.pem
+  371  sc
+  372  openssl x509 -in key.pem -inform pem -noout -text 
+  373  ll
+  374  openssl x509 -in server-key.pem -inform pem -noout -text 
+  375  vim /etc/default/docker
+  376  sudo vim /etc/default/docker
+  377  sudo service docker restart
+  378  ll
+  379  vim server-cert.txt 
+  380  rm *pem
+  381  ll
+  382  rm ca.srl client.csr extfile.cnf server.csr 
+  383  echo 01 > ca.srl
+  384  openssl genrsa -des3 -out ca-key.pem 2048
+  385  openssl req -new -x509 -days 3650 -key ca-key.pem -out ca.pem
+  386  openssl genrsa -des3 -out server-key.pem 2048
+  387  openssl req -new -key server-key.pem -out server.csr -config server-cert.txt
+  388  openssl x509 -req -days 3650 -in server.csr -CA ca.pem -CAkey ca-key.pem -out server-cert.pem -extensions v3_req -extfile server-cert.txt
+  389  openssl genrsa -des3 -out key.pem 2048
+  390  openssl req -subj '/CN=client' -new -key key.pem -out client.csr
+  391  echo extendedKeyUsage = clientAuth > extfile.cnf
+  392  openssl x509 -req -days 3650 -in client.csr -CA ca.pem -CAkey ca-key.pem -out cert.pem -extfile extfile.cnf
+  393  openssl rsa -in server-key.pem -out server-key.pem
+  394  openssl rsa -in key.pem -out key.pem
+  395  openssl x509 server-key.pem -inform pem -noout -text 
+  396  sudo service docker restart
+  397  vim /etc/default/docker
+  398  sudo vim /etc/default/docker
+  399  sudo service docker restart
+  400  sudo vim /etc/default/docker
+  401  sudo service docker restart
+  402  sudo service docker stop
+  403  docker daemon
+  404  sudo vim /etc/default/docker
+  405  sudo service docker restart
+  406  sudo vim /etc/default/docker
+  407  sudo service docker restart
+  408  sudo vim /etc/default/docker
+  409  sudo docker daemon
+  410  sudo docker daemon -H unix:///var/run/docker.sock -H tcp://127.0.0.1:2376 --tlsverify --tlscacert=~/.docker/ca.pem --tlscert=~/.docker/server-cert.pem --tlskey=~/.docker/server-key.pem
+  411  docker daemon -H unix:///var/run/docker.sock -H tcp://127.0.0.1:2376 --tlsverify --tlscacert=~/.docker/ca.pem --tlscert=~/.docker/server-cert.pem --tlskey=~/.docker/server-key.pem
+  412  sudo vim /etc/default/docker
+  413  sudo service docker restart
+  414  docker -H tcp://127.0.0.1:2376 --tlsverify version
+  415  docker -H unix:///var/run/docker.sock version
+  416  docker -H unix:///var/run/docker.sock inof
+  417  docker -H unix:///var/run/docker.sock info
+  418  docker info
+  419  sudo docker info
+  420  ps aux | grep docker
+  421  sudo service docker restart
+  422  ps aux | grep docker
+  423  sudo service docker stop
+  424  sudo vim /etc/default/docker
+  425  docker daemon -H unix:///var/run/docker.sock -H tcp://127.0.0.1:2376 --tlsverify --tlscacert=/home/michele/.docker/ca.pem --tlscert/home/michele/.docker/server-cert.pem --tlskey=/home/michele/.docker/server-key.pem --storage-driver=overlay
+  426  sudo docker daemon -H unix:///var/run/docker.sock -H tcp://127.0.0.1:2376 --tlsverify --tlscacert=/home/michele/.docker/ca.pem --tlscert/home/michele/.docker/server-cert.pem --tlskey=/home/michele/.docker/server-key.pem --storage-driver=overlay
+  427  sudo docker daemon -H unix:///var/run/docker.sock -H tcp://127.0.0.1:2376 --tlsverify --tlscacert=/home/michele/.docker/ca.pem --tlscert=/home/michele/.docker/server-cert.pem --tlskey=/home/michele/.docker/server-key.pem --storage-driver=overlay
+  428  sudo vim /etc/default/docker
+  429  sudo service docker restart
+  430  ps aux | grep docker
+  431  docker -H tcp://127.0.0.1:2376 --tlsverify version
+  432  docker -H unix:///var/run/docker.sock version
+  433  cd ../../
+  434  ls
+  435  mvn clean install
+  436  git status
+  437  vim src/main/resources/docker-java.properties 
+  438  vim pom.xml 
+  439  ss user
+  440  ss user.name
+  441  mvn clean install
+  442  ocg
+  443  git checkout --
+  444  ss
+  445  mvn clean install
+  446  vim src/main/resources/docker-java.properties 
+  447  mvn clean install
+  448  cd target/test-classes/someHomeDir/.docker/certs/
+  449  ls
+  450  vim dummy.txt 
+  451  cd ..
+  452  ls
+  453  vim config.json 
+  454  docker info
+  455  git checkout docker-java-3.0.0
+  456  git checkout --
+  457  git checkout docker-java-3.0.0
+  458  mvn clean install
+  459  ls
+  460  vim src/main/resources/docker-java.properties 
+  461  mvn -v
+  462  mvn clean install
+  463  git checkout master
+  464  git status
+  465  vim src/main/resources/docker-java.properties 
+  466  DOCKER_HOST=tcp://localhost:2376
+  467  DOCKER_TLS_VERIFY=1
+  468  DOCKER_CERT_PATH=/home/user/.docker/certs
+  469  DOCKER_CONFIG=/home/$USER/.docker
+  470  DOCKER_CERT_PATH=/home/$USER/.docker/certs
+  471  docker info
+  472  echo $DOCKER_*
+  473  echo $DOCKER_CERT_PATH 
+  474  echo $DOCKER_CONFIG 
+  475  export DOCKER_HOST=tcp://localhost:2376
+  476  export DOCKER_TLS_VERIFY=1
+  477  export DOCKER_CERT_PATH=/home/user/.docker/certs
+  478  export DOCKER_CONFIG=/home/$USER/.docker
+  479  docker info
+  480  export DOCKER_CERT_PATH=/home/$USER/.docker/certs
+  481  docker info
+  482  cd /home/michele/.docker/
+  483  ls
+  484  mkdir certs
+  485  mv * certs/
+  486  docker info
+  487  mvn clean install
+  488  cd -
+  489  mvn clean install
+  490  ls
+  491  vim src/main/resources/docker-java.properties 
+  492  cp src/main/resources/docker-java.properties .
+  493  mvn clean install
+  494  ls
+  495  vim src/main/resources/docker-java.properties 
+  496  rm docker-java.properties 
+  497  mvn clean install
+  498  vim src/main/resources/docker-java.properties 
+  499  mvn clean install
+  500  vim src/main/resources/docker-java.properties 
+  501  docker images
+  502  vim README.md 
+  503  oc
+  504  docker images
+  505  sudo su
+  506  docker ps -a 
+  507  docker images
+  508  docker ps -a 
+  509  cd -
+  510  cd
+  511  cd workspace/java/docker-java/
+  512  ls
+  513  vim src/main/java/com/github/dockerjava/api/
+  514  docker ps -a
+  515  docker images
+  516  docker ps -a
+  517  htop
+  518  docker images
+  519  docker ps -a
+  520  mvn clean install
+  521  ock
+  522  ssh pi@10.0.0.101
+  523  docker images
+  524  ps -a
+  525  docker ps -a
+  526  htop
+  527  cd ~/Downloads/
+  528  extract OSGITestProject.zip 
+  529  ls
+  530  rm -r com.integratingstuff.osgi.*
+  531  cp OSGITestProject.zip ../workspace/java/
+  532  ls
+  533  cd ../workspace/java/
+  534  ls
+  535  mkdir osgi-example
+  536  mv OSGITestProject.zip osgi-example/
+  537  cd osgi-
+  538  cd osgi-example/
+  539  ls
+  540  extract OSGITestProject.zip 
+  541  ls
+  542  vim pom.xml 
+  543  mvn clean install
+  544  wget http://dev.anyframejava.org/maven/repo/org/springframework/osgi/log4j.osgi/1.2.15-SNAPSHOT
+  545  ls
+  546  wget http://dev.anyframejava.org/maven/repo/org/springframework/osgi/log4j.osgi/1.2.15-SNAPSHOT/log4j.osgi-1.2.15-SNAPSHOT.jar
+  547  ls
+  548  vim log4j.osgi-1.2.15-SNAPSHOT.jar 
+  549  mvn install:install-file -Dfile=./log4j.osgi-1.2.15-SNAPSHOT.jar
+  550  mvn clean install
+  551  mvn install:install-file -DgroupId=org.springframework.osgi -DartifactId=log4j.osgi -Dversion=1.2.15-SNAPSHOT -Dfile=./log4j.osgi-1.2.15-SNAPSHOT.jar
+  552  sc
+  553  mvn install:install-file -DgroupId=org.springframework.osgi -DartifactId=log4j.osgi -Dversion=1.2.15-SNAPSHOT -Dfile=./log4j.osgi-1.2.15-SNAPSHOT.jar -Dpackaging=jar
+  554  sc
+  555  mvn clean install
+  556  cd ..
+  557  rm -r osgi-example/
+  558  ls
+  559  cd docker-java/
+  560  ls
+  561  git status
+  562  cd ../../deployment-package-example/
+  563  cd ..
+  564  s
+  565  ls
+  566  cd java/dep/
+  567  ls
+  568  wget http://repo1.maven.org/maven2/com/google/guava/guava/r09/guava-r09.jar
+  569  ls
+  570  cd ..
+  571  ls
+  572  cd com.google.guava-r9/
+  573  ls
+  574  sf pom
+  575  cd META-INF/maven/com.google.guava/guava/
+  576  ls
+  577  mvn clean install
+  578  cd ../../../../
+  579  ls
+  580  c d../
+  581  cd ../
+  582  ls
+  583  cd org.osgi.example/
+  584  ls
+  585  vim .classpath 
+  586  ll
+  587  vim .project 
+  588  cd ../
+  589  ls
+  590  cd test/
+  591  ls
+  592  cd example
+  593  cd ../example-2/
+  594  ls
+  595  vim pom.xml 
+  596  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  597  vim pom.xml 
+  598  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  599  vim pom.xml 
+  600  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  601  ls
+  602  cd target/
+  603  ls
+  604  cd ..
+  605  mvn clean
+  606  ls
+  607  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  608  ls
+  609  cd target/
+  610  ls
+  611  cd classes/
+  612  ls
+  613  vim javax.ws.rs-api_2.0.1.jar 
+  614  cd ..
+  615  ls
+  616  cd ..
+  617  ls
+  618  cd ..
+  619  ls
+  620  cp -r docker-java/ test/
+  621  ls
+  622  cd test/
+  623  ls
+  624  cd docker-java/
+  625  ls
+  626  mvn clean
+  627  vim pom.xml 
+  628  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  629  vim pom.xml 
+  630  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  631  vim pom.xml 
+  632  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  633  vim pom.xml 
+  634  ss io.netty
+  635  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  636  mvn clean
+  637  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  638  mvn clean
+  639  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  640  ls
+  641  cp pom.xml pom.bkp
+  642  vim pom.
+  643  vim pom.xml 
+  644  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  645  vim pom.xml 
+  646  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+  647  vim pom.xml 
+  648  rm pom.xml 
+  649  cp pom.bkp pom.xml
+  650  vim pom.
+  651  vim pom.xml 
+  652  vim guava-r09.jar 
+  653  cd ../
+  654  s
+  655  ls
+  656  cd example-2/
+  657  vim pom.xml 
+  658  mvn clean install
+  659  ls
+  660  cd target/
+  661  ls
+  662  cd classes/
+  663  ls
+  664  cd ../dependency/
+  665  ls
+  666  cd ../../
+  667  ls
+  668  vim pom.xml 
+  669  mvn clean install
+  670  ls target/
+  671  ls
+  672  ls target/dependency/
+  673  rm target/
+  674  rm -r target/
+  675  ls
+  676  vim pom.xml 
+  677  mvn clean install
+  678  cd target/
+  679  ls
+  680  cd classes/
+  681  ls
+  682  cd ..
+  683  ls
+  684  cd ..
+  685  ls
+  686  vim pom.xml 
+  687  mvn clean install
+  688  cd target/
+  689  ls
+  690  cd dependency/
+  691  ls
+  692  cd ../
+  693  ls
+  694  cd ..
+  695  ls
+  696  vim pom.xml 
+  697  cd target/
+  698  ls
+  699  vim osgi-example-2-1.0.0.jar 
+  700  ls
+  701  cd workspace/
+  702  ls
+  703  cd java/test/
+  704  ls
+  705  cd example-2/
+  706  ls
+  707  cd target/
+  708  ls
+  709  scp -r dependency/* pi@10.0.0.101:/home/pi/test-maven-build/
+  710  ock
+  711  cd ..
+  712  ls
+  713  vim pom.xml 
+  714  mvn clean install
+  715  ls
+  716  vim pom.xml 
+  717  mvn clean install
+  718  vim pom.xml 
+  719  mvn clean install
+  720  vim pom.xml 
+  721  mvn clean install
+  722  vim pom.xml 
+  723  ls
+  724  cd target/
+  725  ls
+  726  cd ..
+  727  cp -r target/classes/META-INF/ .
+  728  ls
+  729  vim pom.xml 
+  730  mvn -Pbuild-eclipse:build
+  731  vim pom.xml 
+  732  mvn -Pbuild-eclipse:build
+  733  vim pom.xml 
+  734  mvn -Pbuild-eclipse:build
+  735  vim pom.xml 
+  736  mvn -Pbuild-eclipse prefix:build
+  737  vim pom.xml 
+  738  mvn -Pcreate-osgi-bundle prefix:build
+  739  vim pom.xml 
+  740  cd ../
+  741  ls
+  742  cp -r ../org.osgi.example/ .
+  743  ls
+  744  cd org.osgi.example/
+  745  ls
+  746  mkdir lib
+  747  cd lib/
+  748  wget http://central.maven.org/maven2/com/github/docker-java/docker-java/3.0.0/docker-java-3.0.0.jar
+  749  ls
+  750  cd ..
+  751  ls
+  752  cd lib/
+  753  ls
+  754  cd ..
+  755  vim pom.xml
+  756  ls
+  757  cp ../example-2/pom.xml .
+  758  vim pom.xml 
+  759  ls
+  760  ll
+  761  rm .pom.xml.swp 
+  762  vim pom.xml 
+  763  vim build.properties 
+  764  mvn clean install
+  765  vim pom.xml 
+  766  vim build.properties 
+  767  vim pom.xml 
+  768  ls
+  769  vim .classpath 
+  770  ll
+  771  vim .project 
+  772  oct
+  773  mvn clean install
+  774  vim pom.xml 
+  775  mvn clean install
+  776  vim pom.xml 
+  777  mvn clean install
+  778  vim pom.xml 
+  779  mvn clean install
+  780  vim pom.xml 
+  781  vim build.properties 
+  782  ll
+  783  mvn clean install
+  784  vim pom.xml 
+  785  mvn clean install
+  786  vim pom.xml 
+  787  vim pom.xml 
+  788  mvn clean install
+  789  vim pom.xml 
+  790  mvn clean install
+  791  ll
+  792  cd target/
+  793  ls
+  794  tree
+  795  vim org.osgi.example-1.0.0.qualifier.jar 
+  796  cd ..
+  797  ls
+  798  cd target/
+  799  ls
+  800  cd ..
+  801  ls
+  802  cd lib/
+  803  ls
+  804  vim build.properties 
+  805  mvn clean install
+  806  vim target/org.osgi.example-1.0.0.qualifier.jar 
+  807  sudo minicom -b 115200 -o -D /dev/ttyUSB0 
+  808  vim
+  809  /opt/eclipse/eclimd
+  810  vim pom.xml 
+  811  oc
+  812  mvn clean dependency:copy-dependencies
+  813  vim
+  814  cd target/
+  815  ls
+  816  cd ..
+  817  cd target/dependency/
+  818  ls
+  819  vim jersey-guava-2.11.jar 
+  820  cd ..
+  821  ls target/
+  822  mvn clean install
+  823  htop
+  824  cd /opt/eclipse/
+  825  ls
+  826  ss OSGI
+  827  sf osgi-docker
+  828  ss osgi-docker
+  829  cd ../../org.osgi.example/
+  830  ls
+  831  ll
+  832  cd .settings/
+  833  ls
+  834  cat org.eclipse.jdt.core.prefs 
+  835  cat org.eclipse.pde.core.prefs 
+  836  cd ..
+  837  ls
+  838  ll
+  839  vim workbench.xmi 
+  840  ss osgi-docker
+  841  sf osgi-docker
+  842  vim .classpath 
+  843  ls
+  844  cd ..
+  845  ls
+  846  cd bkp/
+  847  ls
+  848  mkdir v1
+  849  mv osgi.rest.example/ v1/
+  850  mkdir v2
+  851  mv org.osgi.example/ bkp/v2/
+  852  ls
+  853  cd v
+  854  cd v2/
+  855  ls
+  856  cd ..
+  857  cd plugins/plugins/
+  858  ls
+  859  rm org.osgi.example_1.0.0.201606161338.jar 
+  860  rm guava-18.0.pom 
+  861  rm com.gazza.docker.support_1.0.0.jar 
+  862  vim /home/michele/workspace/java/.metadata/.plugins/org.eclipse.pde.core/osgi-rest-maven/dev.properties
+  863  cd ../../test/org.osgi.example/
+  864  ls
+  865  mvn clean
+  866  cd ../../
+  867  ls
+  868  cd org.osgi.example/
+  869  ls
+  870  mvn clean
+  871  vim pom.xml 
+  872  mvn clean install
+  873  vim pom.xml 
+  874  mvn clean install
+  875  vim target-definition
+  876  mkdir target-definition
+  877  cd target-definition/
+  878  vim kura-equinox_3.8.1.target
+  879  vim pom.xml
+  880  cd ..
+  881  ls
+  882  mvn clean install
+  883  ls
+  884  cd target-definition/
+  885  mvn install
+  886  vim pom.xml
+  887  mvn clean install
+  888  vim pom.xml 
+  889  cd ../
+  890  ls
+  891  mvn clean install
+  892  vim pom.xml 
+  893  mvn clean install
+  894  vim pom.xml 
+  895  mvn clean install
+  896  ls
+  897  cd target-definition/
+  898  ls
+  899  cd ..
+  900  rm -r target-definition/
+  901  mvn clean install
+  902  cd ../org.osgi.example/
+  903  ls
+  904  cd 
+  905  cd workspace/kura/
+  906  ls
+  907  cd ../java/kura
+  908  ls
+  909  ss build.plugins.plugin.version
+  910  ls
+  911  cd target/
+  912  ls
+  913  cd classes/
+  914  ls
+  915  cd ../generated-sources/
+  916  ls
+  917  cd ..
+  918  ls
+  919  cd maven-archiver/
+  920  ls
+  921  cd ..
+  922  ls
+  923  vim local-artifacts.properties 
+  924  vim org.osgi.example-1.0.0.qualifier.jar 
+  925  vim p2artifacts.xml 
+  926  vim p2content.xml 
+  927  cd ..
+  928  ls
+  929  cd target/
+  930  ls
+  931  cd ../lib/
+  932  ls
+  933  vim docker-java-3.0.0.jar
+  934  ll
+  935  vm docker-java-3.0.0.jar 
+  936  vim docker-java-3.0.0.jar 
+  937  cd ..
+  938  ls
+  939  vim pom.xml 
+  940  cd test/
+  941  ls
+  942  cd ..
+  943  ls
+  944  c target/
+  945  cd target/
+  946  tree
+  947  cd ..
+  948  mvn clean install
+  949  cd ../test/org.osgi.example/
+  950  ls
+  951  vim pom.xml
+  952  ls
+  953  cd target/
+  954  ll
+  955  cd generated-sources/
+  956  ls
+  957  c d..
+  958  cd ..
+  959  tree
+  960  mvn clean install
+  961  tree target/
+  962  vim test/org.osgi.example_1.0.0.201606081246.jar 
+  963  ls
+  964  cd generated-sources/annotations/
+  965  ls
+  966  cd ../../
+  967  ls
+  968  cd maven-archiver/
+  969  ll
+  970  vim  pom.properties 
+  971  cd ..
+  972  ls
+  973  cd ..
+  974  ls
+  975  ssh pi@10.0.0.101
+  976  :
+  977  cd ../../
+  978  ls
+  979  cd docker-java/
+  980  ls
+  981  cd ../../
+  982  ls
+  983  cd org.osgi.example/
+  984  ls
+  985  vim pom.xml 
+  986  vim docker-java-3.0.0.jar 
+  987  :cd ../../
+  988  ls
+  989  cd ..
+  990  cd ../../org.osgi.example/
+  991  ls
+  992  vim pom.xml 
+  993  vim pom.xml 
+  994  mvn clean install
+  995  cd target/
+  996  ls
+  997  cd generated-sources/
+  998  ls
+  999  cd ../classes/
+ 1000  ls
+ 1001  vim com.github.docker-java_3.0.0.jar 
+ 1002  tree
+ 1003  cd ..
+ 1004  tree
+ 1005  cd ..
+ 1006  ls
+ 1007  tree
+ 1008  cd ../test/example
+ 1009  tree
+ 1010  cd ../org.osgi.example/
+ 1011  ls
+ 1012  tree
+ 1013  cd ..
+ 1014  cd .
+ 1015  cd ..
+ 1016  ls
+ 1017  cd com.gazza.docker.support/
+ 1018  ll
+ 1019  tree
+ 1020  cd META-INF/maven/com.github.docker-java/docker-java/
+ 1021  vim pom.xml 
+ 1022  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 1023  vim pom.xml 
+ 1024  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 1025  ls
+ 1026  cd target/
+ 1027  ls
+ 1028  cd classes/
+ 1029  ls
+ 1030  vim com.google.guava_0.0.0.18_0.jar 
+ 1031  cp com.google.guava_0.0.0.18_0.jar ~/workspace/java/org.osgi.example/lib/
+ 1032  mvn clean install
+ 1033  ls
+ 1034  cp org.apache.commons.lang_2.6.0.jar ~/workspace/java/org.osgi.example/lib/
+ 1035  cd lib/
+ 1036  ls
+ 1037  cd ..
+ 1038  vim META-INF/MANIFEST.MF 
+ 1039  vim org.apache.commons.lang_2.6.0.jar 
+ 1040  cd lib/
+ 1041  s
+ 1042  ls
+ 1043  cd
+ 1044  cd /var/lib/
+ 1045  ls
+ 1046  mkdir docker-java
+ 1047  sudo mkdir docker-java
+ 1048  cd docker-java/
+ 1049  ls
+ 1050  mkdir .docker
+ 1051  sudo mkdir .docker
+ 1052  ls
+ 1053  cd .docker/
+ 1054  ls
+ 1055  cd
+ 1056  cd .docker/
+ 1057  ls
+ 1058  cd certs/
+ 1059  ls
+ 1060  vim docker-java-3.0.0.jar 
+ 1061  cd ..
+ 1062  mvn clean install
+ 1063  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1064  mkdir test
+ 1065  cd target/
+ 1066  ls
+ 1067  tree
+ 1068  cd classes/
+ 1069  ls
+ 1070  vim com.github.docker-java_3.0.0.jar 
+ 1071  cd ..
+ 1072  ls
+ 1073  cd ..
+ 1074  ls
+ 1075  cd lib/
+ 1076  ls
+ 1077  cd ..
+ 1078  ls
+ 1079  vim pom.xml 
+ 1080  export DOCKER_HOST=tcp://localhost:2376
+ 1081  export DOCKER_TLS_VERIFY=1
+ 1082  export DOCKER_CERT_PATH=/home/user/.docker/certs
+ 1083  export DOCKER_CERT_PATH=/home/michele/.docker/certs
+ 1084  export DOCKER_CONFIG=/home/michele/.docker
+ 1085  vim ~/.docker-java.properties
+ 1086  cp ~/.docker-java.properties .
+ 1087  ls
+ 1088  mv .docker-java.properties docker-java.properties
+ 1089  vim build.properties 
+ 1090  vim docker-java.properties 
+ 1091  mvn clean install
+ 1092  vim com.integratingstuff.osgi.test/
+ 1093  tmux
+ 1094  htop
+ 1095  cd workspace/java/org.osgi.example/
+ 1096  ls
+ 1097  cat docker-java.properties 
+ 1098  ls
+ 1099  cd target/
+ 1100  ls
+ 1101  vim org.osgi.example-1.0.0.qualifier.jar 
+ 1102  xmp
+ 1103  ls
+ 1104  vim ../lib/docker-java-3.0.0.jar 
+ 1105  cd ..
+ 1106  ls
+ 1107  cd test/
+ 1108  ls
+ 1109  vim ../pom.xml 
+ 1110  rm -r *
+ 1111  cd ..
+ 1112  ls
+ 1113  cp target/org.osgi.example-1.0.0.qualifier.jar test/
+ 1114  cd test/
+ 1115  ls
+ 1116  jar xf org.osgi.example-1.0.0.qualifier.jar 
+ 1117  ls
+ 1118  cd lib/
+ 1119  ls
+ 1120  vim docker-java-3.0.0.jar 
+ 1121  cd ..
+ 1122  mvn clean install
+ 1123  vim docker-java.properties
+ 1124  ls
+ 1125  /opt/eclipse/eclipse 
+ 1126  mvn clean install
+ 1127  vim src/
+ 1128  mvn clean install
+ 1129  vim src/osgi/rest/example/ExampleResource.java 
+ 1130  mvn clean install
+ 1131  ls
+ 1132  cd ../
+ 1133  ls
+ 1134  cd docker-java/
+ 1135  ls
+ 1136  cd target/
+ 1137  ls
+ 1138  cd classes/
+ 1139  ls
+ 1140  cd ..
+ 1141  ls
+ 1142  tree
+ 1143  tree | grep jar
+ 1144  ls
+ 1145  cd ../test/docker-java/
+ 1146  ls
+ 1147  cd ..
+ 1148  ls
+ 1149  cd ..
+ 1150  ls
+ 1151  mvn clean install
+ 1152  cp target/classes/org.glassfish.jersey.connectors.jersey-apache-connector_2.11.0.jar lib/
+ 1153  ls
+ 1154  vim build.properties 
+ 1155  vim META-INF/MANIFEST.MF 
+ 1156  mvn clean install
+ 1157  ls
+ 1158  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1159  vim pom.xml 
+ 1160  mvn clean install
+ 1161  ls target/classes/
+ 1162  mvn clean install
+ 1163  scp target/classes/org.glassfish.jersey.core.jersey-client_2.11.0.jar lib/
+ 1164  mvn clean install
+ 1165  cp target/classes/javax.ws.rs-api_2.0.1.jar lib/
+ 1166  mvn clean install
+ 1167  ls
+ 1168  cp target/classes/slf4j.api_1.7.5.jar lib/
+ 1169  cp target/classes/jcl.over.slf4j_1.7.12.jar lib/
+ 1170  ls lib/
+ 1171  mvn clean install
+ 1172  ls target/classes/
+ 1173  mvn clean install
+ 1174  cp target/classes/org.glassfish.jersey.core.jersey-common_2.11.0.jar lib/
+ 1175  mvn clean install
+ 1176  ls target/classes/
+ 1177  cp target/classes/org.glassfish.hk2.api_2.5.0.b05.jar lib/
+ 1178  mvn clean install
+ 1179  mvn clean isntall
+ 1180  mvn clean install
+ 1181  ls target/classes/
+ 1182  mvn clean install
+ 1183  ls target/classes/
+ 1184  mvn clean install
+ 1185  ls target/classes/
+ 1186  mvn clean install
+ 1187  cp target/classes/org.glassfish.jersey.bundles.repackaged.jersey-guava_2.23.1.jar lib/
+ 1188  mvn clean install
+ 1189  ls target/classes/
+ 1190  mvn clean install
+ 1191  ls lib/
+ 1192  cp target/classes/org.glassfish.hk2.external.javax.inject_2.5.0.b05.jar lib/
+ 1193  mvn clean install
+ 1194  ls target/classes/
+ 1195  mvn clean install
+ 1196  cp target/classes/com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider_2.6.4.jar lib/
+ 1197  mvn clean install
+ 1198  vim META-INF/MANIFEST.MF 
+ 1199  vim lib/com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider_2.6.4.jar 
+ 1200  mvn clean install
+ 1201  ls target/classes/
+ 1202  cp target/classes/com.fasterxml.jackson.jaxrs.jackson-jaxrs-base_2.6.4.jar lib/
+ 1203  mvn clean install
+ 1204  ls target/classes/
+ 1205  cp target/classes/com.fasterxml.jackson.jaxrs.jackson-jaxrs-base_2.6.4.jar lib/
+ 1206  ls target/classes/
+ 1207  mvn clean install
+ 1208  cp target/classes/com.fasterxml.jackson.core.jackson-core_2.6.4.jar lib/
+ 1209  mvn clean install
+ 1210  ls target/classes/
+ 1211  cp target/classes/javax.annotation-api_1.2.0.jar lib/
+ 1212  mvn clean install
+ 1213  ls target/classes/
+ 1214  cp target/classes/com.h3xstream.findsecbugs.plugin-deps_1.4.6.jar lib/
+ 1215  mvn clean install
+ 1216  ls target/classes/
+ 1217  cp target/classes/bcpkix_1.54.0.jar lib/
+ 1218  mvn clean install
+ 1219  cd org.eclipse.kura.
+ 1220  cd org.osgi.example/
+ 1221  ls
+ 1222  ls target/classes/
+ 1223  cp target/classes/bcprov_1.48.0.jar lib/
+ 1224  :w
+ 1225  mvn clean install
+ 1226  ls target/classes/
+ 1227  cp target/classes/org.apache.commons.compress_1.5.0.jar lib/
+ 1228  mvn clean install
+ 1229  :q
+ 1230  ls target/classes/
+ 1231  ls target/classes/ 
+ 1232  ls target/classes/ | grep io
+ 1233  mvn clean install
+ 1234  ls target/classes/ | grep io
+ 1235  mvn clean install
+ 1236  ls target/classes/ | grep io
+ 1237  ls target/classes/ | grep comp
+ 1238  mvn clean install
+ 1239  vim lib/org.apache.commons.compress_1.5.0.jar 
+ 1240  cd target/classes/
+ 1241  ls
+ 1242  ss IO
+ 1243  ss IOUtils
+ 1244  cd ..
+ 1245  cp target/classes/org.apache.commons.io_2.3.0.jar lib/
+ 1246  mvn clean install
+ 1247  cd lib/
+ 1248  s
+ 1249  ls
+ 1250  cd ..
+ 1251  ls
+ 1252  cd lib/
+ 1253  ls
+ 1254  rm bcprov_1.48.0.jar 
+ 1255  cd ..
+ 1256  mvn clean install
+ 1257  ls
+ 1258  cp target/classes/bcprov_1.54.0.jar lib/
+ 1259  mvn clean install
+ 1260  vim $JAVA_HOME/jre/lib/security/java.security
+ 1261  which java
+ 1262  clear
+ 1263  vim ~/.profile 
+ 1264  vim
+ 1265  cd lib/
+ 1266  ss BouncyCastleProvider
+ 1267  vim bcprov_1.54.0.jar 
+ 1268  cd ..
+ 1269  ss docker-java
+ 1270  vim .classpath 
+ 1271  ls
+ 1272  vim build.properties 
+ 1273  mvn clean dependency:copy-dependencies
+ 1274  vim .classpath 
+ 1275  ls
+ 1276  cd target/
+ 1277  ls
+ 1278  cd dependency/
+ 1279  ls
+ 1280  cd ..
+ 1281  ls
+ 1282  mvn clean dependency:copy-dependencies
+ 1283  sc
+ 1284  vim .class
+ 1285  cd ..
+ 1286  vim .classpath 
+ 1287  mvn clean install
+ 1288  vim .classpath 
+ 1289  mvn eclipse:eclipse
+ 1290  vim .classpath 
+ 1291  vim ~/.profile 
+ 1292  echo $M2_REPO 
+ 1293  cd /home/michele/.m2/repository/
+ 1294  ls
+ 1295  cd -
+ 1296  mvn eclipse:eclipse
+ 1297  mvn dependency:resolve
+ 1298  vim .classpath 
+ 1299  cd ../test/org.osgi.example/
+ 1300  ls
+ 1301  vim .classpath 
+ 1302  ls
+ 1303  vim .classpath 
+ 1304  mvn eclipse:eclipse
+ 1305  vim .classpath 
+ 1306  maven eclipse
+ 1307  mvn package
+ 1308  vim .classpath 
+ 1309  history | grep mvn
+ 1310  mvn dependency:resolve
+ 1311  vim .classpath 
+ 1312  mvn dependency:resolve
+ 1313  vim .classpath 
+ 1314  mvn eclipse:clean
+ 1315  vim .classpath 
+ 1316  mvn eclipse:eclipse
+ 1317  vim .classpath 
+ 1318  mvn eclipse:eclipse
+ 1319  vim .classpath 
+ 1320  mvn clean install
+ 1321  cd $M2_REPO
+ 1322  ls
+ 1323  cd org/
+ 1324  cd bouncycastle/
+ 1325  ls
+ 1326  cd bcprov-jdk15on/
+ 1327  ls
+ 1328  cd 1.54
+ 1329  ls
+ 1330  vim docker-java/
+ 1331  cd org.osgi.example/
+ 1332  ls
+ 1333  cd target/classes/
+ 1334  ls
+ 1335  ss BouncyCastleProvider
+ 1336  pwd
+ 1337  echo $M2_REPO 
+ 1338  vim .classpath 
+ 1339  mvn clean install
+ 1340  java ListCryptoProviders
+ 1341  which java
+ 1342  ls -l /etc/alternatives/java
+ 1343  sc
+ 1344  cd /usr/lib/jvm/java-7-oracle/jre/
+ 1345  ls
+ 1346  cd /usr/lib/jvm/java-7-oracle/jre/
+ 1347  sc
+ 1348  cd lib/
+ 1349  ls
+ 1350  cd ext/
+ 1351  ls
+ 1352  cp ~/workspace/java/org.osgi.example/lib/bcprov_1.54.0.jar /usr/lib/jvm/java-7-oracle/jre/lib/ext/
+ 1353  sudo cp ~/workspace/java/org.osgi.example/lib/bcprov_1.54.0.jar /usr/lib/jvm/java-7-oracle/jre/lib/ext/
+ 1354  sc
+ 1355  java ListCryptoProviders
+ 1356  cd -
+ 1357  cd ~/workspace/java/org.osgi.example/
+ 1358  mvn clean install
+ 1359  cd -
+ 1360  cd /usr/lib/jvm/java-7-oracle/jre/lib/ext/
+ 1361  ls
+ 1362  cd ../
+ 1363  ls
+ 1364  vim security/java.security 
+ 1365  sudo vim security/java.security 
+ 1366  sc
+ 1367  sudo vim /usr/lib/jvm/java-7-oracle/jre/lib/java.security
+ 1368  sudo vim /usr/lib/jvm/java-7-oracle/jre/lib/security/java.security 
+ 1369  sc
+ 1370  vim bcprov_1.54.0.jar 
+ 1371  ls
+ 1372  oc
+ 1373  cd ../../lib/
+ 1374  ls
+ 1375  mvn dependency:resolve
+ 1376  ls
+ 1377  cp META-INF/MANIFEST.MF META-INF/MANIFEST.MF.bkp
+ 1378  history | grep mvn
+ 1379  mvn dependency:resolve
+ 1380  cd target/classes/
+ 1381  ls
+ 1382  cd ..
+ 1383  history | grep mvn
+ 1384  cd ..
+ 1385  history | grep mvn
+ 1386  mvn clean dependency:copy-dependencies
+ 1387  ls
+ 1388  mkdir other-jars
+ 1389  mv *.jar other-jars/
+ 1390  ls
+ 1391  rm javax.ws.rs.jar.zip 
+ 1392  ls
+ 1393  cp META-INF/MANIFEST.MF MANIFEST.template
+ 1394  cp -r lib other-jars/
+ 1395  ls other-jars/
+ 1396  ls other-jars/lib/
+ 1397  ls
+ 1398  vim create-manifest.sh
+ 1399  cd ..
+ 1400  cp -r org.osgi.example/ org.osgi.example.bak
+ 1401  cd org.osgi.example
+ 1402  ls
+ 1403  chmod +x create-manifest.sh 
+ 1404  ./create-manifest.sh 
+ 1405  vim create-manifest.sh
+ 1406  ./create-manifest.sh 
+ 1407  ls
+ 1408  vim create-manifest.sh
+ 1409  ./create-manifest.sh 
+ 1410  cd lib/
+ 1411  ls
+ 1412  cd ..
+ 1413  vim create-manifest.sh
+ 1414  vim MANIFEST.template 
+ 1415  vim create-manifest.sh
+ 1416  ./create-manifest.sh 
+ 1417  vim create-manifest.sh
+ 1418  ./create-manifest.sh 
+ 1419  vim create-manifest.sh
+ 1420  ./create-manifest.sh 
+ 1421  vim create-manifest.sh
+ 1422  ./create-manifest.sh 
+ 1423  vim create-manifest.sh
+ 1424  ./create-manifest.sh 
+ 1425  vim create-manifest.sh
+ 1426  ./create-manifest.sh 
+ 1427  vim create-manifest.sh
+ 1428  mv MANIFEST.template MANIFEST.MF.template
+ 1429  vim create-manifest.sh
+ 1430  ./create-manifest.sh 
+ 1431  vim META-INF/MANIFEST.
+ 1432  vim META-INF/MANIFEST.MF
+ 1433  vim META-INF/MANIFEST.
+ 1434  ./create-manifest.sh 
+ 1435  vim create-manifest.sh
+ 1436  ./create-manifest.sh 
+ 1437  vim META-INF/MANIFEST.
+ 1438  vim META-INF/MANIFEST.MF
+ 1439  vim create-manifest.sh
+ 1440  ./create-manifest.sh 
+ 1441  vim META-INF/MANIFEST.MF
+ 1442  vim create-manifest.sh
+ 1443  ./create-manifest.sh 
+ 1444  vim META-INF/MANIFEST.MF
+ 1445  vim create-manifest.sh
+ 1446  ./create-manifest.sh 
+ 1447  vim create-manifest.sh
+ 1448  vim META-INF/MANIFEST.MF
+ 1449  vim create-manifest.sh
+ 1450  ./create-manifest.sh 
+ 1451  vim META-INF/MANIFEST.MF
+ 1452  mvn clean install
+ 1453  vim META-INF/MANIFEST.MF
+ 1454  vim create-manifest.sh
+ 1455  ./create-manifest.sh 
+ 1456  vim META-INF/MANIFEST.MF
+ 1457  mvn clean install
+ 1458  ls
+ 1459  cp META-INF/MANIFEST.MF.bkp .
+ 1460  mv MANIFEST.MF.bkp MANIFEST.MF.template
+ 1461  vim create-manifest.sh 
+ 1462  vim pom.xml 
+ 1463  mvn -Pdownload-dependencies bundle:wrap
+ 1464  ls
+ 1465  cd lib/
+ 1466  ls
+ 1467  rm -r *
+ 1468  vim pom.xml 
+ 1469  ls
+ 1470  c d..
+ 1471  cd ..
+ 1472  ls
+ 1473  vim pom.xml 
+ 1474  vim build.properties 
+ 1475  mvn -Pdownload-dependencies bundle:wrap
+ 1476  vim pom.xml 
+ 1477  vim build.properties 
+ 1478  vim pom.xml 
+ 1479  mvn -Pdownload-dependencies bundle:wrap
+ 1480  cp pom.xml pom.xml.bkp
+ 1481  cp ../org.osgi.example.bak/pom.xml .
+ 1482  mvn clean install
+ 1483  vim build.properties 
+ 1484  rm -r lib/*
+ 1485  cp -r ../org.osgi.example/lib/* lib/
+ 1486  cp -r ../org.osgi.example.bak/lib/* lib/
+ 1487  ls
+ 1488  mvn clean install
+ 1489  vim build.properties
+ 1490  mvn clean install
+ 1491  vim pom.xml.bkp 
+ 1492  mvn -Pdownload-dependencies bundle:wrap
+ 1493  cd bundles/
+ 1494  ls
+ 1495  cd classes/
+ 1496  ls
+ 1497  cd ..
+ 1498  mvn -Pdownload-dependencies bundle:wrap
+ 1499  mvn -Pdownload-dependencies 
+ 1500  mvn -Pdownload-dependencies bundle:wrap
+ 1501  mvn clean -Pdownload-dependencies bundle:wrap
+ 1502  ls
+ 1503  cd ..
+ 1504  rm -r bundles/*
+ 1505  mvn clean -Pdownload-dependencies bundle:wrap
+ 1506  mvn clean install
+ 1507  cd target/classes/
+ 1508  ls
+ 1509  cd ..
+ 1510  ls
+ 1511  cd ..
+ 1512  ls
+ 1513  ./create-manifest.sh 
+ 1514  vim META-INF/MANIFEST.MF
+ 1515  mvn clean install
+ 1516  vim bcprov_1.54.0.jar 
+ 1517  ls
+ 1518  ss Preconditions
+ 1519  ls
+ 1520  vim create-manifest.sh 
+ 1521  cd target/classes/
+ 1522  ls
+ 1523  c d..
+ 1524  cd ..
+ 1525  ls
+ 1526  cd ..
+ 1527  ls
+ 1528  ./create-manifest.sh 
+ 1529  vim META-INF/MANIFEST.MF
+ 1530  cd .
+ 1531  cd ..
+ 1532  cd org.osgi.example
+ 1533  s
+ 1534  ls
+ 1535  vim MANIFEST.MF.template 
+ 1536  ./create-manifest.sh 
+ 1537  vim META-INF/MANIFEST.MF
+ 1538  cd lib/
+ 1539  ls
+ 1540  cd ..
+ 1541  mvn clean install
+ 1542  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1543  vim build.properties 
+ 1544  mvn clean install
+ 1545  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1546  vim ../org.osgi.example.bak/build.properties 
+ 1547  vim build.properties 
+ 1548  cd bin/
+ 1549  ls
+ 1550  cd ..
+ 1551  ls
+ 1552  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1553  rm META-INF/MANIFEST.template META-INF/MANIFEST.MF.bkp 
+ 1554  vim create-manifest.sh 
+ 1555  cd bin/
+ 1556  tree
+ 1557  cd ..
+ 1558  ls
+ 1559  mvn clean install
+ 1560  cd lib/
+ 1561  ss Preconditions
+ 1562  cd ..
+ 1563  ls
+ 1564  ls test/
+ 1565  rm -r test/*
+ 1566  cp target/org.osgi.example-1.0.0.qualifier.jar test/
+ 1567  cd test/
+ 1568  ls
+ 1569  java xf org.osgi.example-1.0.0.qualifier.jar 
+ 1570  jar -xf org.osgi.example-1.0.0.qualifier.jar 
+ 1571  ls
+ 1572  vim META-INF/
+ 1573  ls
+ 1574  cd lib/
+ 1575  ls
+ 1576  cd 
+ 1577  cd workspace/java/
+ 1578  ls
+ 1579  cd docker-java/
+ 1580  cd ../../
+ 1581  ls
+ 1582  vim pom.xml
+ 1583  vim create-manifest.sh 
+ 1584  mv create-manifest.sh build.sh
+ 1585  ./build.sh 
+ 1586  cd lib/
+ 1587  s StringUtils
+ 1588  ss StringUtils
+ 1589  cd ../
+ 1590  ls
+ 1591  cd .../
+ 1592  cd ../
+ 1593  ls
+ 1594  cd docker-java/
+ 1595  ls
+ 1596  mvn clean dependency:copy-dependencies
+ 1597  cd ..
+ 1598  vim pom.xml
+ 1599  vim pom.xml 
+ 1600  ls
+ 1601  ll
+ 1602  ls
+ 1603  rm .pom.xml.swp 
+ 1604  vim pom.xml 
+ 1605  mvn clean dependency:copy-dependencies
+ 1606  vim pom.xml 
+ 1607  mvn clean dependency:copy-dependencies
+ 1608  vim pom.xml 
+ 1609  mvn clean dependency:copy-dependencies
+ 1610  vim pom.xml 
+ 1611  mvn clean dependency:copy-dependencies
+ 1612  cd target/dependency/
+ 1613  ls
+ 1614  ss StringUtiles
+ 1615  ss StringUtils
+ 1616  ./build.sh 
+ 1617  ls
+ 1618  ss PoolingHttpClientConnectionManager
+ 1619  cd target/
+ 1620  ll
+ 1621  cd ..
+ 1622  vim pom.xml 
+ 1623  ss ConnPoolControl
+ 1624  ./build.sh 
+ 1625  vim httpcore-4.3.jar 
+ 1626  ss AFUNIXSocketAddress
+ 1627  ss RuntimeDelegateImpl
+ 1628  cd lib/
+ 1629  <dependency>
+ 1630  ss RuntimeDelegateImpl
+ 1631  ls
+ 1632  cd ..
+ 1633  vim META-INF/MANIFEST.MF 
+ 1634  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1635  vim lib/org.glassfish.jersey.core.jersey-common_2.11.0.jar 
+ 1636  ./build.sh 
+ 1637  cd lib/
+ 1638  ls
+ 1639  ss RuntimeDelegateImpl
+ 1640  vim org.glassfish.jersey.core.jersey-common_2.23.0.jar 
+ 1641  ss server
+ 1642  vim org.apache.commons.io_2.3.0.jar 
+ 1643  sf server
+ 1644  tree
+ 1645  cd ..
+ 1646  vim pom.xml
+ 1647  ./build.sh 
+ 1648  curl -X POST http://10.0.0.101/services/hello
+ 1649  curl -X POST http://127.0.0.1:9090/services/hello
+ 1650  docker images
+ 1651  ps aux | grep docker
+ 1652  sudo service docker start
+ 1653  sudo vim /etc/default/docker
+ 1654  sudo service docker
+ 1655  sudo service docker status
+ 1656  sudo service docker start
+ 1657  sudo docker daemon -H unix:///var/run/docker.sock -H tcp://127.0.0.1:2376 --tlsverify --tlscacert=/home/michele/.docker/ca.pem --tlscert=/home/michele/.docker/server-cert.pem --tlskey=/home/michele/.docker/server-key.pem --storage-driver=overlay
+ 1658  cd /home/michele/.docker/
+ 1659  ls
+ 1660  vim /etc/default/docker
+ 1661  sudo vim /etc/default/docker
+ 1662  docker images
+ 1663  ocb
+ 1664  docker rmi $(docker images -q)
+ 1665  ps -a
+ 1666  docker ps -a
+ 1667  ocb
+ 1668  docker rm $(docker ps -a -q)
+ 1669  docker rmi $(docker images -q)
+ 1670  docker rmi -f $(docker images -q)
+ 1671  docker images
+ 1672  curl -X POST http://10.0.0.101/services/hello
+ 1673  curl -X POST http://127.0.0.1:9090/services/hello
+ 1674  docker images
+ 1675  /opt/eclipse/eclimd 
+ 1676  vim ../../pom.xml 
+ 1677  vim jersey-common-2.11.jar 
+ 1678  cd ../../
+ 1679  ls
+ 1680  cd ../org.osgi.example
+ 1681  ls
+ 1682  cd ../
+ 1683  ls
+ 1684  cd org.osgi.example
+ 1685  mvn clean install
+ 1686  ./build.sh 
+ 1687  cd lib/
+ 1688  ls
+ 1689  cd ..
+ 1690  ls
+ 1691  ./build.sh 
+ 1692  ls
+ 1693  cd target/
+ 1694  ls
+ 1695  cd classes/
+ 1696  ls
+ 1697  cd ..
+ 1698  ls
+ 1699  cd ..
+ 1700  mvn clean dependency:copy-dependencies
+ 1701  cd target/dependency/
+ 1702  ls
+ 1703  cd ../
+ 1704  ls
+ 1705  cd ../
+ 1706  ls
+ 1707  vim build.
+ 1708  vim build.sh 
+ 1709  ./build.sh 
+ 1710  ls target/
+ 1711  ll target/
+ 1712  curl -X POST http://127.0.0.1:9090/services/hello
+ 1713  vim
+ 1714  ./build.sh 
+ 1715  curl -X POST http://127.0.0.1:9090/services/hello
+ 1716  ./build.sh 
+ 1717  curl -X POST http://127.0.0.1:9090/services/hello
+ 1718  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1719  ./build.sh 
+ 1720  curl -X POST http://127.0.0.1:9090/services/hello
+ 1721  cd lib/
+ 1722  ls
+ 1723  vim
+ 1724  cd ..
+ 1725  vim META-INF/
+ 1726  cd ..
+ 1727  ls
+ 1728  cd org.osgi.example
+ 1729  ls
+ 1730  vim build.
+ 1731  rm -r bin/*
+ 1732  ls
+ 1733  vim build.sh 
+ 1734  mvn clean install
+ 1735  ls
+ 1736  vim build.properties 
+ 1737  cd bin/
+ 1738  ls
+ 1739  cd ..
+ 1740  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1741  vim pom.xml
+ 1742  mvn clean install
+ 1743  cd bin/
+ 1744  ls
+ 1745  ll
+ 1746  cd ..
+ 1747  cd ../org.osgi.example.bak/bin/
+ 1748  ls
+ 1749  cd osgi/rest/example/
+ 1750  ls
+ 1751  cd -
+ 1752  cd ../../org.osgi.example
+ 1753  ls
+ 1754  vim build.properties 
+ 1755  cd ../org.osgi.example.bak/
+ 1756  ls
+ 1757  mvn clean install
+ 1758  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1759  vim MANIFEST.template 
+ 1760  vim META-INF/MANIFEST.MF
+ 1761  cd ../
+ 1762  ls
+ 1763  cd bkp/v2/org.osgi.example/
+ 1764  vim META-INF/MANIFEST.MF 
+ 1765  cd ../../../
+ 1766  ls
+ 1767  cd org.osgi.example
+ 1768  ls
+ 1769  vim build.properties 
+ 1770  mvn clean install
+ 1771  vim build.properties 
+ 1772  vim META-INF/MANIFEST.MF 
+ 1773  vim pom.xml
+ 1774  vim pom.xml
+ 1775  vim META-INF/MANIFEST.MF 
+ 1776  mvn clean install
+ 1777  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1778  cd ..
+ 1779  cd -
+ 1780  cd ..
+ 1781  cd org.osgi.example
+ 1782  ls
+ 1783  cd ..
+ 1784  ll
+ 1785  cd org.osgi.example
+ 1786  ls
+ 1787  vim 
+ 1788  cd bin/
+ 1789  ls
+ 1790  cd ..
+ 1791  vim build.properties 
+ 1792  cd target/classes/
+ 1793  ls
+ 1794  cd ..
+ 1795  cd classes/
+ 1796  ls
+ 1797  cd ..
+ 1798  vim build.properties 
+ 1799  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1800  cd META-INF/
+ 1801  ls
+ 1802  cd ..
+ 1803  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 1804  cd ..
+ 1805  cd src
+ 1806  cd org.osgi.example
+ 1807  cd src/
+ 1808  ll
+ 1809  tree
+ 1810  ll
+ 1811  mv org.osgi.example osgi.rest.example
+ 1812  cd osgi.rest.example/
+ 1813  ls
+ 1814  vim pom.xml
+ 1815  mvn clean install
+ 1816  vim M
+ 1817  vim META-INF/MANIFEST.MF 
+ 1818  mvn clean install
+ 1819  ls
+ 1820  vim target/osgi.rest.example-1.0.0.qualifier.jar 
+ 1821  ls
+ 1822  cd bin/
+ 1823  ls
+ 1824  cd ..
+ 1825  ls
+ 1826  vim build.properties 
+ 1827  mvn clean install
+ 1828  cd bin/
+ 1829  ls
+ 1830  ll
+ 1831  sudo vim osgi.swp
+ 1832  cd ..
+ 1833  ls
+ 1834  vim pom.xml
+ 1835  cd target/
+ 1836  ls
+ 1837  vim maven-archiver/
+ 1838  ls
+ 1839  cd maven-archiver/
+ 1840  ls
+ 1841  cd ../
+ 1842  ping 8.8.8.8
+ 1843  mvn clean
+ 1844  ls
+ 1845  cd ../plugins/plugins/
+ 1846  ls
+ 1847  rm -r *
+ 1848  cd ..
+ 1849  cd ../osgi.rest.example/
+ 1850  ls
+ 1851  sf qualifier
+ 1852  rm -r test/*
+ 1853  rm -r test/
+ 1854  ls
+ 1855  cd bundles/
+ 1856  ls
+ 1857  cd classes/
+ 1858  ls
+ 1859  cd ../
+ 1860  ls
+ 1861  cd ../
+ 1862  rm -r *
+ 1863  ls
+ 1864  cd ../
+ 1865  ls
+ 1866  cd osgi.rest.example/
+ 1867  ls
+ 1868  cd ..
+ 1869  ll
+ 1870  cd org.osgi.example
+ 1871  ls
+ 1872  cd ../
+ 1873  cd osgi.rest.example/
+ 1874  ls
+ 1875  ll
+ 1876  cd ..
+ 1877  ll
+ 1878  cd org.osgi.example.bak/
+ 1879  ls
+ 1880  git init 
+ 1881  cd ../
+ 1882  rmdir org.osgi.example
+ 1883  cd org.osgi.example
+ 1884  ls
+ 1885  ll
+ 1886  vim .project 
+ 1887  cd ..
+ 1888  cd org.osgi.example
+ 1889  cd ..
+ 1890  cd org.osgi.example.bak/
+ 1891  ls
+ 1892  cd ..
+ 1893  rm -r org.osgi.example/
+ 1894  mv org.osgi.example.bak org.osgi.example
+ 1895  ls
+ 1896  cd org.osgi.example/
+ 1897  ls
+ 1898  ss
+ 1899  ls
+ 1900  ping 8.8.8.8
+ 1901  sudo apt-get update
+ 1902  mvn clean install
+ 1903  ls
+ 1904  mvn clean dependency:copy-dependencies
+ 1905  cd target/dependency/
+ 1906  ll
+ 1907  cd org.osgi.example-1.0.0.qualifier-lib/
+ 1908  ls
+ 1909  cd ..
+ 1910  ls
+ 1911  cd ../../
+ 1912  ls
+ 1913  vim pom.xml
+ 1914  cd ..
+ 1915  ls
+ 1916  cd org.osgi.example/
+ 1917  ls
+ 1918  vim pom.xml 
+ 1919  vim osgi.rest.example-1.0.0.qualifier.jar 
+ 1920  vim pom.xml 
+ 1921  vim pom.xml 
+ 1922  rm .pom.xml.swp 
+ 1923  cd target/dependency/
+ 1924  ls
+ 1925  sudo docker daemon -H unix:///var/run/docker.sock -H tcp://127.0.0.1:2376 --tlsverify --tlscacert=/home/michele/.docker/certs/ca.pem --tlscert=/home/michele/.docker/certs/server-cert.pem --tlskey=/home/michele/.docker/certs/server-key.pem --storage-driver=overlay
+ 1926  sc
+ 1927  cd -
+ 1928  ls
+ 1929  cd target/dependency/
+ 1930  vim pom.xml 
+ 1931  ls
+ 1932  cd lib/
+ 1933  ls
+ 1934  cd ..
+ 1935  mkdir .bkp-jar
+ 1936  mv lib/* .bkp-jar/
+ 1937  cp target/dependency/* lib/
+ 1938  cp -r target/dependency/* lib/
+ 1939  sudo cp -r target/dependency/* lib/
+ 1940  rm -r lib/*
+ 1941  ls
+ 1942  cd ..
+ 1943  mkdir bkp/v3
+ 1944  cp -r org.osgi.example/ bkp/v3/
+ 1945  cd org.osgi.example/
+ 1946  ls
+ 1947  cd lib/
+ 1948  ls
+ 1949  c d..
+ 1950  cd ..
+ 1951  cp -r target/dependency/* lib/
+ 1952  cd lib/
+ 1953  l
+ 1954  rm -r .
+ 1955  ls
+ 1956  rm -r *
+ 1957  cd ..
+ 1958  ls
+ 1959  cd other-jars/
+ 1960  ls
+ 1961  cd ..
+ 1962  rm -r other-jars/
+ 1963  ls
+ 1964  vim create-manifest.sh 
+ 1965  chmod +x create-manifest.sh 
+ 1966  vim create-manifest.sh 
+ 1967  cp META-INF/MANIFEST.MF .MANIFEST.MF.bkp
+ 1968  rm MANIFEST.template 
+ 1969  cp META-INF/MANIFEST.MF MANIFEST.MF.template
+ 1970  vim MANIFEST.MF.template 
+ 1971  vim create-manifest.sh 
+ 1972  ./create-manifest.sh 
+ 1973  git commit -m "comment first"
+ 1974  git add -a
+ 1975  git add -A
+ 1976  git commit -m "comment first"
+ 1977  git pusgit push -u origin master
+ 1978  git push -u origin master
+ 1979  git remote add origin https://github.com/mgazz/org.osgi.example.git
+ 1980  git push -u origin master
+ 1981  ls
+ 1982  ./create-manifest.sh 
+ 1983  vim create-manifest.sh 
+ 1984  ./create-manifest.sh 
+ 1985  cd target/
+ 1986  ls
+ 1987  cd dependency/
+ 1988  ls
+ 1989  vim create-manifest.sh 
+ 1990  cd ..
+ 1991  ls
+ 1992  vim create-manifest.sh 
+ 1993  ./create-manifest.sh 
+ 1994  vim create-manifest.sh 
+ 1995  ./create-manifest.sh 
+ 1996  cd lib/
+ 1997  ls
+ 1998  cd ..
+ 1999  ls
+ 2000  ll
+ 2001  ./create-manifest.sh 
+ 2002  vim create-manifest.sh 
+ 2003  mvn clean install
+ 2004  cd lib/
+ 2005  ls | do
+ 2006  ls | grep do
+ 2007  ll
+ 2008  cd ..
+ 2009  vim pom.xml 
+ 2010  vim build.properties 
+ 2011  cd bin/
+ 2012  ls
+ 2013  cd ..
+ 2014  ls
+ 2015  vim .classpath 
+ 2016  vim 2_REPO/com/github/docker-java/docker-java/3.0.0/docker-java-3.0.0.jar
+ 2017  vim M2_REPO/com/github/docker-java/docker-java
+ 2018  mvn dependency:resolve
+ 2019  vim .classpath 
+ 2020  mvn eclipse:eclipse
+ 2021  vim .classpath 
+ 2022  mvn clean install
+ 2023  mvn package
+ 2024  mvn dependency:resolve
+ 2025  vim .classpath 
+ 2026  cd ~/.m2/
+ 2027  ls
+ 2028  cd repository/
+ 2029  ls
+ 2030  cd com/github/docker-java/docker-java/3.0.0
+ 2031  ls
+ 2032  mvn dependency:resolve
+ 2033  sc
+ 2034  mvn clean install
+ 2035  echo $M2_REPO 
+ 2036  vim .classpath 
+ 2037  vim $M2_REPO/com/github/docker-java/docker-java/3.0.0/docker-java-3.0.0.jar$
+ 2038  vim $M2_REPO/com/github/docker-java/docker-java/3.0.0/docker-java-3.0.0.jar
+ 2039  vim .classpath 
+ 2040  cd -
+ 2041  cd 
+ 2042  cd workspace/java/
+ 2043  ls
+ 2044  cd org.
+ 2045  cd org.osgi.example/
+ 2046  ls
+ 2047  mvn clean install
+ 2048  vim
+ 2049  cd src/osgi/rest/example/
+ 2050  ls
+ 2051  ll
+ 2052  rm .Activator.java.swp 
+ 2053  rm .ExampleResource.java.swp 
+ 2054  cd ../..
+ 2055  ls
+ 2056  ls
+ 2057  cd ..
+ 2058  ls
+ 2059  pcd ..
+ 2060  cd ..
+ 2061  ls
+ 2062  cd org.osgi.example/
+ 2063  ls
+ 2064  vim .classpath 
+ 2065  mvn clean install
+ 2066  ls
+ 2067  cd lib/
+ 2068  mvn clean install
+ 2069  cd ta
+ 2070  cd ../target/
+ 2071  ls
+ 2072  cd classes/
+ 2073  ls
+ 2074  cd ../../
+ 2075  ls
+ 2076  vim build.properties 
+ 2077  vim .classpath 
+ 2078  vim create-manifest.sh 
+ 2079  ./create-manifest.sh 
+ 2080  vim create-manifest.sh 
+ 2081  mvn clean install
+ 2082  cd lib/
+ 2083  ls
+ 2084  cd ..
+ 2085  vim META-INF/MANIFEST.MF
+ 2086  cd lib/
+ 2087  ls
+ 2088  ss DockerClient
+ 2089  cd ..
+ 2090  cd target/ls
+ 2091  cd target/
+ 2092  ls
+ 2093  cd ..
+ 2094  vim META-INF/MANIFEST.MF
+ 2095  cd target/generated-sources/
+ 2096  ls
+ 2097  cd ..
+ 2098  ls
+ 2099  cd classes/
+ 2100  ls
+ 2101  ll
+ 2102  trew
+ 2103  tree
+ 2104  cd ..
+ 2105  ls
+ 2106  cd ..
+ 2107  ls
+ 2108  vim ./create-manifest.sh 
+ 2109  mvn clean dependency:copy-dependencies
+ 2110  cd target/dependency/
+ 2111  ls
+ 2112  cd ..
+ 2113  ls
+ 2114  cd ..
+ 2115  ls
+ 2116  cd lib/
+ 2117  ls
+ 2118  cd ..
+ 2119  ls
+ 2120  vim .classpath 
+ 2121  mvn install
+ 2122  vim pom.xml 
+ 2123  mvn clean install
+ 2124  cd lib/
+ 2125  ss BouncyCastleProvider
+ 2126  rm bcprov-jdk15on-1.51.jar 
+ 2127  ls
+ 2128  rm bcpkix-jdk15on-1.51.jar 
+ 2129  ls
+ 2130  rm javax.ws.rs-api-2.0.jar 
+ 2131  cd ..
+ 2132  mvn clean install
+ 2133  vim ExampleResource.java 
+ 2134  n                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ 2135  lx
+ 2136  cd target/
+ 2137  ls
+ 2138  cd classes/
+ 2139  ls
+ 2140  cd osgi/rest/example/
+ 2141  ls
+ 2142  cd -
+ 2143  ls
+ 2144  cd ..
+ 2145  ls
+ 2146  cd ..
+ 2147  ls
+ 2148  vim create-manifest.sh 
+ 2149  cd target/classes/osgi/
+ 2150  cd ..
+ 2151  ls
+ 2152  cd ../../
+ 2153  ls
+ 2154  ./create-manifest.sh 
+ 2155  cd lib/
+ 2156  ls
+ 2157  ss BouncyCastleProvider
+ 2158  vim com.h3xstream.findsecbugs.plugin-deps_1.4.6.jar 
+ 2159  cd ..
+ 2160  vim META-INF/MANIFEST.MF
+ 2161  vim lib/bcprov_1.54.0.jar 
+ 2162  cd ..
+ 2163  ls
+ 2164  cd workspace/
+ 2165  ls
+ 2166  cd java/
+ 2167  ls
+ 2168  cd org.osgi.example/
+ 2169  ls
+ 2170  git status
+ 2171  ls
+ 2172  ss swp
+ 2173  xmp
+ 2174  vim pom.xml 
+ 2175  rm .pom.xml.swp 
+ 2176  ls
+ 2177  ping 8.8.8.8
+ 2178  ./create-manifest.sh 
+ 2179  vim pom.xml 
+ 2180  vim pom.xml 
+ 2181  mvn clean install
+ 2182  mvn clean
+ 2183  mvn clean
+ 2184  htop
+ 2185  /opt/eclipse/eclipse 
+ 2186  mvn install
+ 2187  mvn dependency:resolve
+ 2188  vim ../bkp/v3/org.osgi.example/pom.xml 
+ 2189  mvn dependency:resolve
+ 2190  mvn clean install
+ 2191  htop
+ 2192  cd ../bkp/v3/
+ 2193  ls
+ 2194  cd org.osgi.example/
+ 2195  ls
+ 2196  mvn clean
+ 2197  mvn clean
+ 2198  oc
+ 2199  mvn clean 
+ 2200  mvn install
+ 2201  vim .classpath 
+ 2202  mvn dependency:resolve
+ 2203  cd ~/.m2/repository/org/
+ 2204  ls
+ 2205  rm -r bouncycastle/
+ 2206  ls
+ 2207  ss example
+ 2208  sf qualifier
+ 2209  rm -r test/
+ 2210  ls
+ 2211  ls
+ 2212  ./create-manifest.sh 
+ 2213  cp target/org.osgi.example-1.0.0.qualifier.jar ../plugins/plugins/
+ 2214  clear
+ 2215  ls
+ 2216  mv create-manifest.sh build.sh
+ 2217  mvn eclipse:eclipse
+ 2218  mvn dependency:resolve
+ 2219  cd lib/
+ 2220  ls
+ 2221  cd $M2_REPO/org/glassfish/jersey/core/jersey-client/
+ 2222  ls
+ 2223  cd -
+ 2224  cd 
+ 2225  cd workspace/java/org.osgi.example/
+ 2226  ls
+ 2227  mvn install
+ 2228  cd target/
+ 2229  ls
+ 2230  vim org.osgi.example-1.0.0.qualifier.jar 
+ 2231  cd classes/
+ 2232  ls
+ 2233  vim ../../META-INF/MANIFEST.MF
+ 2234  cd ../../
+ 2235  cp -r target/classes/*.jar lib/
+ 2236  cd lib/
+ 2237  ls
+ 2238  cd ..
+ 2239  ls
+ 2240  vim build.
+ 2241  vim build.sh 
+ 2242  ./build.sh 
+ 2243  vim META-INF/
+ 2244  mvn clean install
+ 2245  vim target/org.osgi.example-1.0.0.qualifier.jar 
+ 2246  vim build.properties 
+ 2247  vim META-INF/MANIFEST.MF
+ 2248  vim build.
+ 2249  vim build.sh 
+ 2250  mvn clean install
+ 2251  vim build.sh 
+ 2252  vim META-INF/MANIFEST.MF
+ 2253  ./build.sh 
+ 2254  vim META-INF/MANIFEST.MF
+ 2255  mvn clean install
+ 2256  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 2257  ls
+ 2258  cd target/
+ 2259  ls
+ 2260  cd ..
+ 2261  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 2262  cd bundles/classes/
+ 2263  ls
+ 2264  cd ../../
+ 2265  cp -r bundles/classes/* lib/
+ 2266  oa
+ 2267  p
+ 2268  ls
+ 2269  ./build.sh 
+ 2270  vim META-INF/MANIFEST.MF
+ 2271  mvn clean install
+ 2272  cd lib/
+ 2273  ll
+ 2274  cd -
+ 2275  vim META-INF/MANIFEST.MF
+ 2276  ls
+ 2277  ll
+ 2278  vim .MANIFEST.MF.bkp 
+ 2279  cd META-INF/
+ 2280  ls
+ 2281  vim MANIFEST.MF.bkp 
+ 2282  rm MANIFEST.MF.bkp 
+ 2283  cp MANIFEST.MF MANIFEST.MF.bkp
+ 2284  vim MANIFEST.MF
+ 2285  cd ...
+ 2286  cd ..
+ 2287  mvn clean install
+ 2288  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 2289  cd bundles/classes/
+ 2290  ls
+ 2291  rm -r *
+ 2292  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 2293  cd ../../
+ 2294  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 2295  cd bundles/classes/
+ 2296  ls
+ 2297  ls | grep sec
+ 2298  rm -r *
+ 2299  cd ../../
+ 2300  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 2301  vim build.sh 
+ 2302  cd lib/
+ 2303  ls
+ 2304  cd ..
+ 2305  vim build.sh 
+ 2306  ./build.sh 
+ 2307  ls
+ 2308  vim MANIFEST.MF.template 
+ 2309  vim META-INF/MANIFEST.MF
+ 2310  mvn clean install
+ 2311  vim ../bkp/v2/org.osgi.example/META-INF/MANIFEST.MF 
+ 2312  mv META-INF/MANIFEST.MF META-INF/ MANIFEST.MF.temp
+ 2313  mv META-INF/MANIFEST.MF META-INF/MANIFEST.MF.temp
+ 2314  mv META-INF/MANIFEST.MF.temp META-INF/MANIFEST.MF
+ 2315  vim META-INF/MANIFEST.MF
+ 2316  cd ../bkp/v1/
+ 2317  ls
+ 2318  cd osgi.rest.example/
+ 2319  ls
+ 2320  cd META-INF/
+ 2321  s
+ 2322  ls
+ 2323  vim MANIFEST.MF 
+ 2324  cd bin
+ 2325  cd ..
+ 2326  cd bin/
+ 2327  ls
+ 2328  tree
+ 2329  cd ..
+ 2330  ls
+ 2331  cd ..
+ 2332  ls
+ 2333  cd ../..
+ 2334  ls
+ 2335  cd org.osgi.example/
+ 2336  mvn clean
+ 2337  mvn eclipse:clean eclipse:eclipse
+ 2338  cd target/
+ 2339  ls
+ 2340  c d..
+ 2341  cd ..
+ 2342  mvn install
+ 2343  cd -
+ 2344  cd ../.metadata/.plugins/
+ 2345  ls
+ 2346  ll
+ 2347  ls -a
+ 2348  cd ..
+ 2349  ls -a
+ 2350  cd .mylyn/
+ 2351  ls
+ 2352  tree
+ 2353  vim repositories.xml.zip 
+ 2354  vim tasks.xml.zip 
+ 2355  cd ..
+ 2356  vim build.properties 
+ 2357  cp target/org.osgi.example-1.0.0.qualifier.jar ~/workspace/java/.metadata/.plugins/
+ 2358  rm /home/michele/workspace/java/.metadata/.plugins/org.osgi.example-1.0.0.qualifier.jar
+ 2359  curl -X POST http://127.0.0.1:9090/services/hello
+ 2360  mvn clean install
+ 2361  mvn clean
+ 2362  mvn clean install
+ 2363  cd target/
+ 2364  ls
+ 2365  ss 2016
+ 2366  mvn clean install
+ 2367  ls
+ 2368  mv build.sh create-manifest.sh
+ 2369  ./create-manifest.sh 
+ 2370  vim create-manifest.sh 
+ 2371  vim MANIFEST.MF.template 
+ 2372  ./create-manifest.sh 
+ 2373  cd lib/
+ 2374  ls
+ 2375  cd ..
+ 2376  mvn clean -Pdownload-dependencies bundle:wrap
+ 2377  vim pom.xml 
+ 2378  mvn clean -Pdownload-dependencies bundle:wrap
+ 2379  vim pom.xml 
+ 2380  mvn clean -Pdownload-dependencies bundle:wrap
+ 2381  rm -r bundles/*
+ 2382  mvn clean -Pdownload-dependencies bundle:wrap
+ 2383  rm -r lib/*
+ 2384  cp bundles/classes/*.jar lib/
+ 2385  cd lib/
+ 2386  ls
+ 2387  cd ..
+ 2388  ./create-manifest.sh 
+ 2389  vim MANIFEST.MF 
+ 2390  vim pom.xml 
+ 2391  rm -r bundles/*
+ 2392  git add .
+ 2393  git add -all
+ 2394  git add --all
+ 2395  git commit -m " com"
+ 2396  ls
+ 2397  git push
+ 2398  mvn clean -Pdownload-dependencies bundle:wrap
+ 2399  cd bundles/classes/
+ 2400  ls
+ 2401  cd ..
+ 2402  vim create-manifest.sh 
+ 2403  vim pom.xml 
+ 2404  ls
+ 2405  ./create-manifest.sh 
+ 2406  cd lib/
+ 2407  ls
+ 2408  cd ..
+ 2409  mvn clean -Pdownload-dependencies bundle:wrap
+ 2410  vim pom.xml 
+ 2411  vim create-manifest.sh 
+ 2412  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 2413  cd ..
+ 2414  mvn -Pcreate-osgi-bundles-from-dependencies bundle:wrap
+ 2415  mvn -Pdownload-dependencies bundle:wrap
+ 2416  ls
+ 2417  mvn clean -Pdownload-dependencies bundle:wrap
+ 2418  mvn clean
+ 2419  ls
+ 2420  rm -r bundles/
+ 2421  mvn clean -Pdownload-dependencies bundle:wrap
+ 2422  mvn dependency:resolve
+ 2423  mvn clean -Pdownload-dependencies bundle:wrap
+ 2424  vim create-manifest.sh 
+ 2425  cd ../docker-java/
+ 2426  vim pom.xml 
+ 2427  rm .pom.xml.swp 
+ 2428  ./create-manifest.sh 
+ 2429  vim pom.xml 
+ 2430  curl -X POST http://127.0.0.1:9090/services/hello
+ 2431  clear
+ 2432  htop
+ 2433  :q
+ 2434  vim pom
+ 2435  ls
+ 2436  rm -r bundles/*
+ 2437  mvn clean -Pdownload-dependencies bundle:wrap
+ 2438  ./create-manifest.sh 
+ 2439  mvn clean install
+ 2440  rm -r bundles/*
+ 2441  mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get -Dartifact=org.glassfish.jersey.bundles.repackaged:jersey-guava:2.23
+ 2442  mvn clean -Pdownload-dependencies bundle:wrap
+ 2443  ls
+ 2444  mvn clean -Pdownload-dependencies bundle:wrap
+ 2445  vim pom.xml 
+ 2446  mvn clean install
+ 2447  vim pom.xml 
+ 2448  cd target/classes/
+ 2449  ls
+ 2450  cd ..
+ 2451  vim create-manifest.sh 
+ 2452  ./create-manifest.sh 
+ 2453  vim META-INF/MANIFEST.MF
+ 2454  mvn clean install
+ 2455  ./create-manifest.sh 
+ 2456  ll
+ 2457  ./create-manifest.sh 
+ 2458  git add .
+ 2459  git add --all
+ 2460  git commit -m "com|
+ 2461  git commit -m "com"
+ 2462  git push
+ 2463  mvn clean install
+ 2464  vim pom.xml 
+ 2465  mvn clean install
+ 2466  ./create-manifest.sh 
+ 2467  cd lib/
+ 2468  ls
+ 2469  cd ..
+ 2470  mvn clean -Pdownload-dependencies bundle:wrap
+ 2471  mvn clean -Pdownload-dependencies clean install
+ 2472  mvn clean -Pdownload-dependencies install
+ 2473  ls
+ 2474  mvn clean -Pdownload-dependencies install
+ 2475  cd target/
+ 2476  ls
+ 2477  cd classes/
+ 2478  ls
+ 2479  cd ...
+ 2480  cd ..
+ 2481  ls
+ 2482  git status
+ 2483  ocb
+ 2484  git checkout --
+ 2485  ls
+ 2486  cd ..
+ 2487  cd lib/
+ 2488  ls
+ 2489  vim pom.xml 
+ 2490  ll
+ 2491  c d..
+ 2492  cd ..
+ 2493  ls
+ 2494  cd bundles/
+ 2495  ls
+ 2496  cd classes/
+ 2497  ls
+ 2498  cd ..
+ 2499  ls
+ 2500  cd .
+ 2501  cd ..
+ 2502  ls
+ 2503  cd ../
+ 2504  mkdir test
+ 2505  cd test/
+ 2506  ls
+ 2507  cd ..
+ 2508  cd save
+ 2509  mkdir save
+ 2510  cd save/
+ 2511  ls
+ 2512  git clone https://github.com/mgazz/org.osgi.example.git
+ 2513  cd org.osgi.example/lib/
+ 2514  cp -r * ../../org.osgi.example/lib/
+ 2515  cd ../../
+ 2516  ls
+ 2517  cd ../org.osgi.example/
+ 2518  ls
+ 2519  cd ../save/org.osgi.example/
+ 2520  mvn clean install
+ 2521  vim create-manifest.sh 
+ 2522  mvn clean install
+ 2523  cd lib/
+ 2524  ls
+ 2525  ll
+ 2526  cd ../../
+ 2527  cd org.osgi.example/
+ 2528  cp ../save/org.osgi.example/lib/* lib/
+ 2529  cd lib/
+ 2530  ls
+ 2531  cd ..
+ 2532  mvn clean install
+ 2533  cd lib/
+ 2534  ls
+ 2535  cd ../
+ 2536  vim META-INF/MANIFEST.MF
+ 2537  vim create-manifest.sh 
+ 2538  ./create-manifest.sh 
+ 2539  vim create-manifest.sh 
+ 2540  cp ../save/org.osgi.example/lib/* lib/
+ 2541  ./create-manifest.sh 
+ 2542  mvn clean install
+ 2543  vim create-manifest.sh 
+ 2544  mvn clean install
+ 2545  cd target/classes/
+ 2546  ls
+ 2547  cd ..
+ 2548  mvn clean install
+ 2549  cd ..
+ 2550  mvn clean install
+ 2551  vim pom.xml 
+ 2552  mvn clean -Pdownload-dependencies bundle:wrap
+ 2553  mvn clean -Pdownload-dependencies install
+ 2554  mvn bundle:wrap
+ 2555  mvn clean install
+ 2556  ./create-manifest.sh 
+ 2557  mvn clean install
+ 2558  curl -X POST http://127.0.0.1:9090/services/hello
+ 2559  docker images
+ 2560  docker pull hello-world
+ 2561  curl -X POST http://127.0.0.1:9090/services/hello
+ 2562  docker images
+ 2563  curl -X POST http://127.0.0.1:9090/services/hello
+ 2564  ./create-manifest.sh 
+ 2565  mvn clean install
+ 2566  cd ~/.docker/
+ 2567  ls
+ 2568  vim docker-java.properties 
+ 2569  vim /etc/default/docker
+ 2570  cd 
+ 2571  cd workspace/java/save/
+ 2572  git clone https://github.com/docker-java/docker-java.git
+ 2573  cd docker-java/
+ 2574  cd target/classes/
+ 2575  ls
+ 2576  tree
+ 2577  cd ..
+ 2578  ls
+ 2579  sf jar
+ 2580  cd site/
+ 2581  ls
+ 2582  cd ..
+ 2583  ls
+ 2584  mvn clean install -DskipITs
+ 2585  ls
+ 2586  sf pkg
+ 2587  vim docker-java-3.0.0-kostyasha-3.jar 
+ 2588  ll
+ 2589  ls
+ 2590  curl http://127.0.0.1:9090/services/hello
+ 2591  curl -X POST http://127.0.0.1:9090/services/hello
+ 2592  curl http://127.0.0.1:9090/services/hello
+ 2593  ss main
+ 2594  cd ../docker-java/
+ 2595  ss main
+ 2596  ss public\ static\ void\ main
+ 2597  ss void\ main
+ 2598  ss main\(
+ 2599  vim pom.xml 
+ 2600  curl -X POST http://127.0.0.1:9090/services/hello
+ 2601  ./create-manifest.sh 
+ 2602  mvn clean install
+ 2603  sudo vim /etc/default/docker
+ 2604  sudo service docker restart
+ 2605  ps aux | grep docker
+ 2606  curl -X POST http://127.0.0.1:9090/services/hello
+ 2607  vim META-INF/MANIFEST.MF
+ 2608  ./create-manifest.sh 
+ 2609  mvn clean install
+ 2610  vim META-INF/MANIFEST.MF
+ 2611  mvn clean install
+ 2612  ./create-manifest.sh 
+ 2613  mvn clean install
+ 2614  ./create-manifest.sh 
+ 2615  mvn clean install
+ 2616  cd lib/
+ 2617  ls
+ 2618  ss ClientBuilder
+ 2619  ls
+ 2620  ss equinox
+ 2621  cd ..
+ 2622  ls
+ 2623  mkdir bkp-lib
+ 2624  cd lib/
+ 2625  cp * ../bkp-lib/
+ 2626  ls
+ 2627  rm javax.ws.rs-api_2.0.1.jar 
+ 2628  mvn clean install
+ 2629  cd ..
+ 2630  mvn clean install
+ 2631  ./create-manifest.sh 
+ 2632  vim META-INF/
+ 2633  mvn clean install
+ 2634  ./create-manifest.sh 
+ 2635  mvn clean install
+ 2636  vim META-INF/MANIFEST.MF
+ 2637  mvn clean install
+ 2638  cd lib/
+ 2639  ls
+ 2640  cd ~/workspace/java/.metadata/.plugins/
+ 2641  ls
+ 2642  vim javax.ws.rs-api_2.0.1.jar 
+ 2643  cd ~/workspace/java/.metadata/.plugins/
+ 2644  curl http://127.0.0.1:9090/services/hello
+ 2645  cd ../
+ 2646  ls
+ 2647  cd save/
+ 2648  vim target/org.osgi.example-1.0.0.jar 
+ 2649  ll target/
+ 2650  git clone https://github.com/hstaudacher/osgi-jax-rs-connector.git
+ 2651  cd osgi-jax-rs-connector/
+ 2652  ls
+ 2653  cd bundles/
+ 2654  ls
+ 2655  cd ..
+ 2656  ls
+ 2657  cd build/
+ 2658  ls
+ 2659  cd com.eclipsesource.jaxrs.jersey.all/
+ 2660  ls
+ 2661  vim pom.xml 
+ 2662  mvn clean install
+ 2663  ls
+ 2664  cd target/
+ 2665  ls
+ 2666  vim jersey-all-2.22.2.jar 
+ 2667  vim ..
+ 2668  cd ..
+ 2669  ls
+ 2670  vim MANIFEST.MF.template 
+ 2671  vim pom.xml 
+ 2672  vm lib/javax.ws.rs-api_2.0.1.jar 
+ 2673  rm lib/javax.ws.rs-api_2.0.1.jar 
+ 2674  ./create-manifest.sh 
+ 2675  mvn clean install
+ 2676  vim pom.xml 
+ 2677  curl http://127.0.0.1:9090/services/hello
+ 2678  curl -X POST http://127.0.0.1:9090/services/hello
+ 2679  ss ClientBuilder
+ 2680  vim pom.xml 
+ 2681  rm lib/javax.ws.rs-api_2.0.1.jar 
+ 2682  mvn clean install
+ 2683  vim create-manifest.sh 
+ 2684  cd target/classes/
+ 2685  ls
+ 2686  cd ../../
+ 2687  ls
+ 2688  cd lib/
+ 2689  ls
+ 2690  tree
+ 2691  cd ../target/classes/
+ 2692  treee
+ 2693  tree -d 1
+ 2694  ls
+ 2695  tree
+ 2696  cd ../../
+ 2697  cd lib/
+ 2698  cd ..
+ 2699  ls
+ 2700  mv lib/* bkp-lib/
+ 2701  vim create-manifest.sh 
+ 2702  ls
+ 2703  cd ..
+ 2704  ls
+ 2705  ./create-manifest.sh 
+ 2706  mvn clean install
+ 2707  vim META-INF/MANIFEST.MF
+ 2708  vim MANIFEST.MF.template 
+ 2709  mvn clean install
+ 2710  ls
+ 2711  cd target/classes/
+ 2712  ls
+ 2713  cd ../../
+ 2714  ls
+ 2715  ./create-manifest.sh 
+ 2716  mvn clean install
+ 2717  ls
+ 2718  vim MANIFEST.MF.template 
+ 2719  ./create-manifest.sh 
+ 2720  mvn clean install
+ 2721  ./create-manifest.sh 
+ 2722  mvn clean install
+ 2723  vim /etc/default/docker
+ 2724  sudo vim /etc/default/docker
+ 2725  sudo service docker restart
+ 2726  docker -H tcp://127.0.0.1:2376
+ 2727  docker -H tcp://127.0.0.1:2376 version
+ 2728  export DOCKER_HOST=tcp://127.0.0.1:2376
+ 2729  curl -X POST http://127.0.0.1:9090/services/hello
+ 2730  vim
+ 2731  ./create-manifest.sh 
+ 2732  mvn clean install
+ 2733  vim target/org.osgi.example-1.0.0.jar 
+ 2734  cd ../
+ 2735  ls
+ 2736  cd 0
+ 2737  cd -
+ 2738  cd lib/
+ 2739  vim com.fasterxml.jackson.core.jackson-annotations_2.6.4.jar 
+ 2740  cd ..
+ 2741  mvn clean install
+ 2742  ./create-manifest.sh 
+ 2743  mvn clean install
+ 2744  curl http://127.0.0.1:9090/services/hello
+ 2745  curl -X POST http://127.0.0.1:9090/services/hello
+ 2746  vim pom.xml 
+ 2747  ./create-manifest.sh 
+ 2748  mvn clean install
+ 2749  cd lib/
+ 2750  ls
+ 2751  clear
+ 2752  ls
+ 2753  cd target/
+ 2754  ls
+ 2755  vim jersey-all-2.22.2.jar 
+ 2756  vim com.fasterxml.jackson.core.jackson-annotations_2.7.5.jar 
+ 2757  cd ..
+ 2758  ./create-manifest.sh 
+ 2759  mvn clean install
+ 2760  curl -X POST http://127.0.0.1:9090/services/hello
+ 2761  vim pom.xml 
+ 2762  git add --all
+ 2763  git commit -m " com"
+ 2764  git push
+ 2765  cd ..
+ 2766  mkdir bkp/vfunc1
+ 2767  cp -r org.osgi.example/ bkp/vfunc1/
+ 2768  cd org.
+ 2769  cd org.osgi.example/
+ 2770  ls
+ 2771  uname -a
+ 2772  vim
+ 2773  sudo vim /etc/default/docker
+ 2774  /opt/eclipse/eclimd
+ 2775  vim create-manifest.sh 
+ 2776  tmux
+ 2777  sudo reboot
+ 2778  tmux
+ 2779  tmu
+ 2780  tmux
+ 2781  ./eth-to-wifi.sh 
+ 2782  cd workspace/
+ 2783  cd java/
+ 2784  ls
+ 2785  cd org.eclipse.kura.
+ 2786  cd org.osgi.example/
+ 2787  ls
+ 2788  /opt/eclipse/eclipse 
+ 2789  curl -X POST http://127.0.0.1:9090/services/hello
+ 2790  docker images
+ 2791  ps aux | grep docker
+ 2792  export DOCKER_HOST=tcp://127.0.0.1:2376
+ 2793  docker images
+ 2794  docker rmi -f $(docker images -q)
+ 2795  docker images
+ 2796  docker rmi -f $(docker images -q)
+ 2797  vim
+ 2798  xmp
+ 2799  rm src/osgi/rest/example/.ExampleResource.java.swp 
+ 2800  mvn clean install
+ 2801  export DOCKER_HOST=tcp://127.0.0.1:2376
+ 2802  docker images
+ 2803  curl -X POST http://127.0.0.1:9090/services/hello
+ 2804  ls
+ 2805  sudo vim /etc/default/docker
+ 2806  ps aux | grep docker
+ 2807  ssh pi@10.0.0.101
+ 2808  ssh pi@10.0.0.101
+ 2809  scp -r target/org.osgi.example-1.0.0.jar  pi@10.0.0.101:/home/pi/docker-kura
+ 2810  sc
+ 2811  sudo vim /etc/default/docker
+ 2812  cd .m2/repository/com/eclipsesource/jaxrs/jersey-all/2.22.2/
+ 2813  ls
+ 2814  vim jersey-all-2.22.2.
+ 2815  vim jersey-all-2.22.2.jar
+ 2816  scp -r jersey-all-2.22.2.jar  pi@10.0.0.101:/home/pi/docker-kura
+ 2817  cd workspace/java/
+ 2818  ls
+ 2819  ll
+ 2820  cd .metadata/
+ 2821  ls
+ 2822  cd ..
+ 2823  cd .metadata/
+ 2824  ls
+ 2825  ll
+ 2826  cd .plugins/
+ 2827  ll
+ 2828  ls
+ 2829  tree
+ 2830  sf jar
+ 2831  sf jar | grep jersey
+ 2832  cd /opt/eclipse/
+ 2833  ls
+ 2834  ll
+ 2835  cd plugins/
+ 2836  ls
+ 2837  ls | grep jersey
+ 2838  ls
+ 2839  ls | grep target
+ 2840  cd configuration/
+ 2841  ls
+ 2842  tree
+ 2843  cd ../
+ 2844  ls
+ 2845  cd ../
+ 2846  ls
+ 2847  sf jersey
+ 2848  cd p
+ 2849  cd p2
+ 2850  ls
+ 2851  tree
+ 2852  ]
+ 2853  ss jersey
+ 2854  cd ..
+ 2855  ss jersey
+ 2856  curl -X POST http://10.0.0.101/services/hello
+ 2857  curl http://10.0.0.101/services/hello
+ 2858  curl -X POST http://10.0.0.101/services/hello
+ 2859  docker images
+ 2860  export DOCKER_HOST=tcp://127.0.0.1:2376
+ 2861  ock
+ 2862  vim
+ 2863  sudo reboot
+ 2864  tmux
+ 2865  /opt/eclipse/eclimd 
+ 2866  sudo minicom -b 115200 -o -D /dev/ttyUSB0 
+ 2867  ls
+ 2868  tmux
+ 2869  ./eth-to-wifi.sh 
+ 2870  ssh pi@10.0.0.101
+ 2871  ls
+ 2872  cd workspace/
+ 2873  ls
+ 2874  cd java/
+ 2875  l
+ 2876  xmp
+ 2877  cd ja
+ 2878  cd test/
+ 2879  ls
+ 2880  cd ..
+ 2881  htop
+ 2882  ls
+ 2883  mkdir kura-workspace
+ 2884  sc
+ 2885  cd kura-workspace/
+ 2886  sc
+ 2887  wget https://s3.amazonaws.com/kura_downloads/user_workspace/release/1.4.0/user_workspace_archive_1.4.0.zip
+ 2888  extract user_workspace_archive_1.4.0.zip 
+ 2889  ls
+ 2890  cd target-definition/
+ 2891  ls
+ 2892  cd target/
+ 2893  ls
+ 2894  cd ../..
+ 2895  ls
+ 2896  wget https://s3.amazonaws.com/kura_downloads/user_workspace/release/1.4.0/user_workspace_archive_1.4.0.zip
+ 2897  sc
+ 2898  ls
+ 2899  cd ..
+ 2900  rm -r org.eclipse.kura.*
+ 2901  cd kura-workspace/
+ 2902  ls
+ 2903  cd .
+ 2904  cd ..
+ 2905  ls
+ 2906  rm -r target-definition/
+ 2907  cd kura-workspace/
+ 2908  ls
+ 2909  cp -r org.eclipse.kura.* ../
+ 2910  cp -r target-definition/ ../
+ 2911  ls
+ 2912  cd ..
+ 2913  ls
+ 2914  cd ../
+ 2915  ls
+ 2916  cd wo
+ 2917  cd java/
+ 2918  ls
+ 2919  rm -r org.eclipse.kura.*
+ 2920  rm -r target-definition/
+ 2921  cp kura-workspace/user_workspace_archive_1.4.0.zip ..
+ 2922  mv ../user_workspace_archive_1.4.0.zip .
+ 2923  ls
+ 2924  /opt/eclipse/eclipse 
+ 2925  rm -r target-definition/
+ 2926  rm -r org.eclipse.kura.*
+ 2927  cd target-definition/
+ 2928  ls
+ 2929  vim kura-equinox_3.8.1.target 
+ 2930  ls
+ 2931  tree
+ 2932  htop
+ 2933  ss osgi_bundles
+ 2934  ss @
+ 2935  ls
+ 2936  cd target/
+ 2937  ls
+ 2938  cd antrun/
+ 2939  ls
+ 2940  cd ../../
+ 2941  ls
+ 2942  cd common/
+ 2943  ls
+ 2944  cd repository/
+ 2945  ls
+ 2946  vim content.xml 
+ 2947  ssh pi@10.0.0.101
+ 2948  cd ../../
+ 2949  s
+ 2950  ls
+ 2951  cd ..
+ 2952  s
+ 2953  ls
+ 2954  rm -r org.eclipse.kura.*
+ 2955  rm -t target-definition/
+ 2956  rm -r target-definition/
+ 2957  ls
+ 2958  cd org.osgi.example/
+ 2959  ls
+ 2960  sf jersey-all
+ 2961  cd ~/.m2/repository/
+ 2962  ls
+ 2963  cf jersey-all
+ 2964  sf jersey-all
+ 2965  cd -
+ 2966  mkdir target-platform-steroids
+ 2967  cp ~/.m2/repository/p2/osgi/bundle/com.eclipsesource.jaxrs.jersey-all/2.22.2/com.eclipsesource.jaxrs.jersey-all-2.22.2.jar target-platform-steroids/
+ 2968  sc
+ 2969  cp target-platform-steroids/* target
+ 2970  sc
+ 2971  cd target-platform-steroids/
+ 2972  ls
+ 2973  cd --
+ 2974  cd -
+ 2975  cd ..
+ 2976  ls
+ 2977  cd target-platform-steroids/
+ 2978  ls
+ 2979  scp pi@10.0.0.101:/home/pi/bkp/publisher-3.3.jar .
+ 2980  cp target-platform-steroids/* target
+ 2981  cd ..
+ 2982  cp target-platform-steroids/* target
+ 2983  curl -X POST http://10.0.0.101/services/hello
+ 2984  curl -X POST http://127.0.0.1:9090/services/hello
+ 2985  docker images
+ 2986  export DOCKER_HOST=tcp://localhost:2376
+ 2987  docker images
+ 2988  docker rmi -f $(docker images -q)
+ 2989  docker images
+ 2990  ls
+ 2991  scp -R target-platform-steroids/ pi@10.0.0.101:/home/pi/kura-steroids
+ 2992  scp -r target-platform-steroids/ pi@10.0.0.101:/home/pi/kura-steroids
+ 2993  scp -r target/*.jar pi@10.0.0.101:/home/pi/kura-steroids
+ 2994  curl -X POST http://10.0.0.101/services/hello
+ 2995  docker images
+ 2996  export DOCKER_HOST=tcp://127.0.0.1:2376
+ 2997  docker images
+ 2998  export DOCKER_HOST=tcp://10.0.0.101:2376
+ 2999  docker images
+ 3000  curl http://10.0.0.101/services/hello
+ 3001  curl -X POST http://127.0.0.1:9090/services/hello
+ 3002  curl -X POST http://10.0.0.101/services/hello
+ 3003  cd workspace/java/org.osgi.example/
+ 3004  ls
+ 3005  mvn clean install
+ 3006  cp target-platform-steroids/* target
+ 3007  curl -X POST http://127.0.0.1:9090/services/hello
+ 3008  scp -r target/*.jar pi@10.0.0.101:/home/pi/kura-steroids
+ 3009  cd ../target-definition/
+ 3010  ls
+ 3011  cd target/
+ 3012  ls
+ 3013  cd ../common/repository/
+ 3014  ls
+ 3015  cd plugins/
+ 3016  ls
+ 3017  ss javax
+ 3018  ss ssl
+ 3019  vim com.gwt.user_0.2.0.jar 
+ 3020  ss javax
+ 3021  ss ssl
+ 3022  ls
+ 3023  cd ..
+ 3024  ls
+ 3025  cd ..
+ 3026  ls
+ 3027  cd ..
+ 3028  ls
+ 3029  cd equinox_3.8.1/
+ 3030  ls
+ 3031  cd repository/plugins/
+ 3032  ls
+ 3033  ss javax
+ 3034  ss ssl
+ 3035  ss javax.net.ssl
+ 3036  vim org.eclipse.kura.core
+ 3037  <dependency>
+ 3038  </dependency>
+ 3039  mvn org.apache.maven.plugins:maven-dependency-plugin:2.4:get -DartifactId=jboss-jsse-api_8.0_spec -DgroupId=org.jboss.spec.javax.net.ssl -Dversion=1.0.0.Final
+ 3040  sc
+ 3041  vim org.eclipse.kura.core_1.0.7.jar 
+ 3042  vim ~/.m2/repository/org/jboss/spec/javax/net/ssl/jboss-jsse-api_8.0_spec/1.0.0.Final/jboss-jsse-api_8.0_spec-1.0.0.Final.jar
+ 3043  cp ~/.m2/repository/org/jboss/spec/javax/net/ssl/jboss-jsse-api_8.0_spec/1.0.0.Final/jboss-jsse-api_8.0_spec-1.0.0.Final.jar ~/workspace/java/
+ 3044  cd ~/workspace/java/
+ 3045  ls
+ 3046  mkdir jars
+ 3047  mv jboss-jsse-api_8.0_spec-1.0.0.Final.jar jars/
+ 3048  lw
+ 3049  ls
+ 3050  cd org.osgi.example/
+ 3051  ls
+ 3052  cd target
+ 3053  cd ../target-platform-steroids/
+ 3054  ls
+ 3055  ls
+ 3056  cd test/
+ 3057  ls
+ 3058  cd ../
+ 3059  l
+ 3060  scd osgi-jax-rs-connector/
+ 3061  ls
+ 3062  cd osgi-jax-rs-connector/
+ 3063  ls
+ 3064  tree
+ 3065  ls
+ 3066  cd build/
+ 3067  ls
+ 3068  cd com.eclipsesource.jaxrs.jersey.all/
+ 3069  ls
+ 3070  vim Jersey\ All.launch 
+ 3071  vim pom.xml 
+ 3072  ls
+ 3073  mvn clean install
+ 3074  ls
+ 3075  cd target/
+ 3076  ls
+ 3077  vim jersey-all-2.22.2.jar 
+ 3078  cd ..
+ 3079  ls
+ 3080  cp pom.xml ~/workspace/java/jars/jboss-jsse-api_8.0_spec-1.0.0.Final.jar 
+ 3081  cp pom.xml ~/workspace/java/jars/
+ 3082  cd ~/workspace/java/jars/
+ 3083  ls
+ 3084  mvn org.apache.maven.plugins:maven-dependency-plugin:2.4:get -DartifactId=jboss-jsse-api_8.0_spec -DgroupId=org.jboss.spec.javax.net.ssl -Dversion=1.0.0.Final
+ 3085  vim pom.xml 
+ 3086  mkdir javax.net.ssl
+ 3087  mv pom.xml javax.net.ssl/
+ 3088  cd javax.net.ssl/
+ 3089  vim pom.xml 
+ 3090  mvn install
+ 3091  cd target/
+ 3092  ls
+ 3093  vim javax.net.ssl-1.0.0.jar 
+ 3094  vim pom.xml 
+ 3095  cd ..
+ 3096  vim pom.xml 
+ 3097  vim target/javax.net.ssl-1.0.0.jar 
+ 3098  cd ~/workspace/java/
+ 3099  ls
+ 3100  cd osgi-jax-rs-connector/
+ 3101  ls
+ 3102  cd build/
+ 3103  ls
+ 3104  cd com.eclipsesource.jaxrs.jersey.all/
+ 3105  ls
+ 3106  vim com.eclipsesource.jaxrs.jersey-all-2.22.2.jar 
+ 3107  vim pom.xml 
+ 3108  scp -r target/javax.net.ssl-1.0.0.jar  pi@10.0.0.101:/home/pi/kura-steroids
+ 3109  curl -X POST http://127.0.0.1:9090/services/hello
+ 3110  curl -X POST http://10.0.0.101/services/hello
+ 3111  vim target/javax.net.ssl-1.0.0.jar 
+ 3112  vim pom.xml 
+ 3113  mvn clean install
+ 3114  scp -r target/javax.net.ssl-1.0.0.jar  pi@10.0.0.101:/home/pi/kura-steroids
+ 3115  vim target/javax.net.ssl-1.0.0.jar 
+ 3116  curl -X POST http://10.0.0.101/services/hello
+ 3117  ock
+ 3118  vim target/javax.net.ssl-1.0.0.jar 
+ 3119  cd ..
+ 3120  mvn clean install
+ 3121  cp target-platform-steroids/* target
+ 3122  vim target/org.osgi.example-1.0.0.jar 
+ 3123  mvn clean install
+ 3124  vim target/org.osgi.example-1.0.0.jar 
+ 3125  ls
+ 3126  cd src/osgi/rest/example/
+ 3127  vim target/org.osgi.example-1.0.0.jar 
+ 3128  cd ../../../
+ 3129  cd ../
+ 3130  vim target/org.osgi.example-1.0.0.jar 
+ 3131  mvn clean install
+ 3132  vim target/org.osgi.example-1.0.0.jar 
+ 3133  vim pom.xml 
+ 3134  cd ../
+ 3135  cd ..
+ 3136  mkdir bkp/v4
+ 3137  cp -r org.osgi.example/ bkp/v4/
+ 3138  cd org.osgi.example/
+ 3139  mkdir -p src/main/java
+ 3140  mv src/osgi/ src/main/java/
+ 3141  mvn clean install
+ 3142  cd ../osgi-jax-rs-connector/
+ 3143  ls
+ 3144  ss repository
+ 3145  mvn clean install
+ 3146  vim target/org.osgi.example-1.0.0.jar 
+ 3147  ls
+ 3148  vim examples/karaf-integration/pom.xml 
+ 3149  vim build/com.eclipsesource.jaxrs.jersey.all/
+ 3150  vim target/org.osgi.example-1.0.0.jar 
+ 3151  vim
+ 3152  mvn eclipse:clean eclipse:eclipse
+ 3153  vim
+ 3154  vim pom.xml 
+ 3155  vim
+ 3156  ssh pi@10.0.0.101
+ 3157  vim pom.xml 
+ 3158  vim
+ 3159  rm ~/workspace/java/org.osgi.example/src/main/java/osgi/rest/example/.ExampleResource.java.swp
+ 3160  vim
+ 3161  mvn dependecy:resolve
+ 3162  mvn dependency:resolve
+ 3163  mvn clean install
+ 3164  vim .classpath 
+ 3165  mvn eclipse:clean eclipse:eclipse
+ 3166  mvn clean install
+ 3167  cd
+ 3168  cd workspace/
+ 3169  ls
+ 3170  cd deployment-package-example/
+ 3171  ls
+ 3172  cd ..
+ 3173  ls
+ 3174  cd resin-diff-arch-prod/
+ 3175  ls
+ 3176  cd ..
+ 3177  lsusb
+ 3178  ssh pi@10.0.0.101
+ 3179  tmux
+ 3180  sudo minicom -b 115200 -o -D /dev/ttyUSB0 
+ 3181  vim target/org.osgi.example-1.0.0.jar 
+ 3182  mvn clean install
+ 3183  mvn eclipse:clean eclipse:eclipse
+ 3184  vim .classpath 
+ 3185  /opt/eclipse/eclimd
+ 3186  wget wget http://ocdc.hursley.ibm.com/ocdc/html/ocdc-installer
+ 3187  ls
+ 3188  cd base-images/
+ 3189  ls
+ 3190  cd ..
+ 3191  ls
+ 3192  cd tk1/
+ 3193  ls
+ 3194  cd custom-kernel-docker/
+ 3195  cd ../L4T-custom-images/
+ 3196  ls
+ 3197  cd Linux_for_Tegra_tk1.docker/
+ 3198  ls
+ 3199  lsblk
+ 3200  lsusb
+ 3201  lsblk
+ 3202  lsusb
+ 3203  lsblk
+ 3204  vim flash.sh 
+ 3205  dmesg
+ 3206  cd /media/usb/
+ 3207  ls
+ 3208  cd ../../
+ 3209  cd -
+ 3210  cd ~/workspace/tk1/L4T-custom-images/Linux_for_Tegra_tk1.docker
+ 3211  lsblk
+ 3212  sudo lsbh
+ 3213  sudo lshw
+ 3214  sudo lshw | less
+ 3215  sudo lsusb -v
+ 3216  lsusb
+ 3217  sudo lshw | less
+ 3218  sudo lsusb -v
+ 3219  sudo lsusb -v | grep dev
+ 3220  ls -l /dev/* | wc -l
+ 3221  dmesg | grep NV
+ 3222  cd /media/usb/
+ 3223  la
+ 3224  ll
+ 3225  cd ..
+ 3226  ls
+ 3227  cd ..
+ 3228  cd media/
+ 3229  ls
+ 3230  dmesg
+ 3231  lsblk
+ 3232  sudo lsusb -v
+ 3233  sudo lsusb -v | less
+ 3234  sudo fdisk -l
+ 3235  lsblk
+ 3236  find /dev/bus/
+ 3237  dmesg
+ 3238  lsusb
+ 3239  cd /dev/usb/
+ 3240  ls
+ 3241  ll
+ 3242  cd ../...
+ 3243  cd ../..
+ 3244  find /dev/bus/
+ 3245  sc
+ 3246  sudo blkid
+ 3247  ls /dev/ | grep sd
+ 3248  clear
+ 3249  ls /dev/ | grep sd
+ 3250  ls /dev/ | grep usr/
+ 3251  ls /dev/ | grep usb
+ 3252  ls /dev/usb/ | grep usb
+ 3253  ls /dev/usb/
+ 3254  lsusb
+ 3255  sudo lsblk
+ 3256  mvn dependency:resolve
+ 3257  vim .classpath 
+ 3258  mvn clean install
+ 3259  cd ~/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0/
+ 3260  ls
+ 3261  vim .classpath 
+ 3262  mvn clean install
+ 3263  vim target/org.osgi.example-1.0.0.jar 
+ 3264  mvn clean install
+ 3265  vim target/org.osgi.example-1.0.0.jar 
+ 3266  mvn clean install
+ 3267  vim target/org.osgi.example-1.0.0.jar 
+ 3268  mvn clean install
+ 3269  vim target/org.osgi.example-1.0.0.jar 
+ 3270  mvn clean install
+ 3271  vim target/org.osgi.example-1.0.0.jar 
+ 3272  mvn clean install
+ 3273  mvn clean install
+ 3274  cd ../bkp/
+ 3275  ls
+ 3276  cd vfunc1/
+ 3277  vim
+ 3278  ll
+ 3279  cd org.osgi.example/
+ 3280  ls
+ 3281  ll
+ 3282  rm .MANIFEST.MF.template.swp 
+ 3283  vim
+ 3284  cd ../../
+ 3285  ls
+ 3286  cd ../
+ 3287  ls
+ 3288  cd org.osgi.example/
+ 3289  ls
+ 3290  mvn clean install
+ 3291  vim target/org.osgi.example-1.0.0.jar 
+ 3292  cd target
+ 3293  ls
+ 3294  tree
+ 3295  ls
+ 3296  rm -r classes/
+ 3297  mvn clean install
+ 3298  cd ..
+ 3299  mvn clean install
+ 3300  curl -X POST http://127.0.0.1:9090/services/hello
+ 3301  mvn clean install
+ 3302  vim target/org.osgi.example-1.0.0.jar 
+ 3303  mvn bundle:manifest
+ 3304  ls
+ 3305  cd target
+ 3306  ls
+ 3307  cd ..
+ 3308  mvn clean bundle:manifest
+ 3309  ls
+ 3310  rm META-INF/MANIFEST.MF
+ 3311  mvn clean install bundle:manifest
+ 3312  vim META-INF/MANIFEST.MF.bkp 
+ 3313  vim target/classes/META-INF/MANIFEST.MF 
+ 3314  mvn bundle:instruction
+ 3315  mvn bundle:instructions
+ 3316  vim target/instructions.bnd 
+ 3317  mvn clean insta
+ 3318  mvn clean install
+ 3319  vim target/org.osgi.example-1.0.0.jar 
+ 3320  mvn clean install
+ 3321  vim target/org.osgi.example-1.0.0.jar 
+ 3322  mvn clean install
+ 3323  vim target/org.osgi.example-1.0.0.jar 
+ 3324  mvn clean install
+ 3325  vim target/org.osgi.example-1.0.0.jar 
+ 3326  mvn clean install
+ 3327  mvn -Pcreate-manifest bundle:manifest
+ 3328  mvn clean install
+ 3329  cd target
+ 3330  ls
+ 3331  ss wadl
+ 3332  ls
+ 3333  cd ../lib/
+ 3334  ss AutoDiscoverable
+ 3335  vim org.osgi.example-1.0.0.jar 
+ 3336  vim pom.xml 
+ 3337  ss wadl
+ 3338  cd ..
+ 3339  mvn clean install
+ 3340  tree target
+ 3341  cd target
+ 3342  ls
+ 3343  cd bi
+ 3344  cd ../bin/
+ 3345  ls
+ 3346  cd ..
+ 3347  mvn -Pcreate-manifest bundle:manifest
+ 3348  mvn -Pcreate-manifest install
+ 3349  cd bin/
+ 3350  ls
+ 3351  cd ..
+ 3352  mvn clean install
+ 3353  ll target
+ 3354  mvn clean install
+ 3355  ll target
+ 3356  vim target/org.osgi.example-1.0.0.jar 
+ 3357  ll target
+ 3358  mvn clean install
+ 3359  ll target
+ 3360  vim target/org.osgi.example-1.0.0.jar 
+ 3361  mvn clean install
+ 3362  vim target/org.osgi.example-1.0.0.jar 
+ 3363  mvn clean install
+ 3364  vim target/org.osgi.example-1.0.0.jar 
+ 3365  mvn clean install
+ 3366  ll target
+ 3367  vim target/org.osgi.example-1.0.0.jar 
+ 3368  mvn clean install
+ 3369  vim target/org.osgi.example-1.0.0.jar 
+ 3370  mvn clean install
+ 3371  cd ../../
+ 3372  ls
+ 3373  cd ..
+ 3374  ls
+ 3375  cd osgi-jax-rs-connector/build/com.eclipsesource.jaxrs.jersey.all/
+ 3376  ls
+ 3377  vim pom.xml 
+ 3378  vim target/jersey-all-2.22.2.jar 
+ 3379  vim target/org.osgi.example-1.0.0.jar 
+ 3380  mvn clean install
+ 3381  vim target/org.osgi.example-1.0.0.jar 
+ 3382  mvn clean install
+ 3383  vim target/org.osgi.example-1.0.0.jar 
+ 3384  mvn clean install
+ 3385  ll target
+ 3386  vim target/org.osgi.example-1.0.0.jar 
+ 3387  mvn clean install
+ 3388  ll target
+ 3389  vim target/org.osgi.example-1.0.0.jar 
+ 3390  mvn clean install
+ 3391  vim target/org.osgi.example-1.0.0.jar 
+ 3392  mvn clean install
+ 3393  vim target/org.osgi.example-1.0.0.jar 
+ 3394  mvn clean install
+ 3395  vim target/org.osgi.example-1.0.0.jar 
+ 3396  cd target
+ 3397  mkdir test
+ 3398  cp org.osgi.example-1.0.0.jar test/
+ 3399  cd test/
+ 3400  ls
+ 3401  ss jersey.jackson
+ 3402  jar -xf org.osgi.example-1.0.0.jar 
+ 3403  cd ..
+ 3404  mvn clean install
+ 3405  cd ..
+ 3406  mvn clean install
+ 3407  cp org.osgi.example-1.0.0.jar test/
+ 3408  vim target/org.osgi.example-1.0.0.jar 
+ 3409  ll
+ 3410  jersey.jackson.internal
+ 3411  ss jersey.jackson.internal
+ 3412  mkdir target/test && cp target/org.osgi.example-1.0.0.jar target/test && cd target/test && jar -xf org.osgi.example-1.0.0.jar && cd -
+ 3413  mvn clean install
+ 3414  vim target/org.osgi.example-1.0.0.jar 
+ 3415  ls
+ 3416  ss jersey.jackson
+ 3417  mkdir target/test && cp target/org.osgi.example-1.0.0.jar target/test && cd target/test && jar -xf org.osgi.example-1.0.0.jar && cd -
+ 3418  vim target/org.osgi.example-1.0.0.jar 
+ 3419  mvn clean install
+ 3420  vim target/org.osgi.example-1.0.0.jar 
+ 3421  mvn clean install
+ 3422  vim target/org.osgi.example-1.0.0.jar 
+ 3423  mvn clean install
+ 3424  curl -X POST http://127.0.0.1:9090/services/hello
+ 3425  mvn clean install
+ 3426  vim target/org.osgi.example-1.0.0.jar 
+ 3427  mvn clean install
+ 3428  vim target/org.osgi.example-1.0.0.jar 
+ 3429  mvn clean install
+ 3430  vim target/org.osgi.example-1.0.0.jar 
+ 3431  mvn clean install
+ 3432  vim target/org.osgi.example-1.0.0.jar 
+ 3433  mvn clean install
+ 3434  vim target/org.osgi.example-1.0.0.jar 
+ 3435  mvn clean install
+ 3436  vim target/org.osgi.example-1.0.0.jar 
+ 3437  mvn clean install
+ 3438  vim target/org.osgi.example-1.0.0.jar 
+ 3439  mvn clean install
+ 3440  vim target/org.osgi.example-1.0.0.jar 
+ 3441  mvn clean install
+ 3442  vim target/org.osgi.example-1.0.0.jar 
+ 3443  ls
+ 3444  ss dependencies
+ 3445  mvn clean install
+ 3446  vim target/org.osgi.example-1.0.0.jar 
+ 3447  mvn clean install
+ 3448  vim target/org.osgi.example-1.0.0.jar 
+ 3449  mvn clean install
+ 3450  vim target/org.osgi.example-1.0.0.jar 
+ 3451  mvn clean install
+ 3452  vim target/org.osgi.example-1.0.0.jar 
+ 3453  mvn clean install
+ 3454  vim target/org.osgi.example-1.0.0.jar 
+ 3455  curl -X POST http://127.0.0.1:9090/services/hello
+ 3456  mvn clean install
+ 3457  curl -X POST http://127.0.0.1:9090/services/hello
+ 3458  vim target/org.osgi.example-1.0.0.jar 
+ 3459  mvn clean install
+ 3460  vim target/org.osgi.example-1.0.0.jar 
+ 3461  mvn clean install
+ 3462  vim target/org.osgi.example-1.0.0.jar 
+ 3463  curl -X POST http://127.0.0.1:9090/services/hello
+ 3464  docker images
+ 3465  export DOCKER_HOST=tcp://127.0.0.1:2376
+ 3466  docker images
+ 3467  docker rmi -f $(docker images -q)
+ 3468  export DOCKER_HOST=tcp://127.0.0.1:2376
+ 3469  curl -X POST http://127.0.0.1:9090/services/hello
+ 3470  docker images
+ 3471  vim
+ 3472  cd ..
+ 3473  cd org.osgi.example/
+ 3474  ls
+ 3475  scp target/org.osgi.example-1.0.0.jar 10.0.0.101:/home/pi/kura-steroid/
+ 3476  scp target/org.osgi.example-1.0.0.jar pi@10.0.0.101:/home/pi/kura-steroid/
+ 3477  scp target/org.osgi.example-1.0.0.jar pi@10.0.0.101:/home/pi/kura-steroids/
+ 3478  ock
+ 3479  curl -X POST http://10.0.0.101/services/hello
+ 3480  ls
+ 3481  git add --all
+ 3482  git commit -m "yep!"
+ 3483  git push
+ 3484  ssh pi@10.0.0.101
+ 3485  ssh pi@10.0.0.101
+ 3486  ssh pi@10.0.0.101
+ 3487  ssh pi@10.0.0.101
+ 3488  ock
+ 3489  curl -X POST http://10.0.0.101/services/hello
+ 3490  cd ..
+ 3491  mkdir bkp/vfunc2
+ 3492  cp -r org.osgi.example/ bkp/vfunc2/
+ 3493  mkdir org.ibm.kura.project
+ 3494  ls
+ 3495  cp -r org.osgi.example/* org.ibm.kura.project/
+ 3496  cd org.ibm.kura.project/
+ 3497  ls
+ 3498  rm -r bkp-lib/
+ 3499  rm -r bin/ lib/ MANIFEST.MF.template META-INF/
+ 3500  ls
+ 3501  mv build.properties build.properties.bkp
+ 3502  mkdir bkp
+ 3503  mv build.properties.bkp build.properties
+ 3504  mv build.properties bundles/ create-manifest.sh bkp/
+ 3505  ll
+ 3506  ls
+ 3507  vim pom.xml 
+ 3508  cd ..
+ 3509  mv org.ibm.kura.project/ org.ibm.kura
+ 3510  cd org.ibm.kura/
+ 3511  ls
+ 3512  wget http://ocdc.hursley.ibm.com/ocdc/html/ocdc-installer
+ 3513  rm ocdc-installer 
+ 3514  ls
+ 3515  vim pom.xml 
+ 3516  vim pom.xml 
+ 3517  ls
+ 3518  mvn clean install
+ 3519  mvn eclipse:clean mvn eclipse:eclipse
+ 3520  mvn eclipse:clean
+ 3521  mvn eclipse:eclipse
+ 3522  export DOCKER_HOST=tcp://127.0.0.1:2376
+ 3523  docker images
+ 3524  docker rmi -f $(docker images -q)
+ 3525  curl -X POST http://10.0.0.101/services/hello
+ 3526  docker images
+ 3527  curl -X POST http://127.0.0.1:9090/services/hello
+ 3528  docker images
+ 3529  docker rmi -f $(docker images -q)
+ 3530  curl -X POST http://127.0.0.1:9090/services/hello
+ 3531  ls
+ 3532  rm bkp/
+ 3533  rm -r bkp/
+ 3534  ll
+ 3535  git init
+ 3536  vim .gitignore
+ 3537  git init
+ 3538  git status
+ 3539  git add --all
+ 3540  ls
+ 3541  git status
+ 3542  vim .gitignore
+ 3543  git init
+ 3544  git status
+ 3545  git  add --all
+ 3546  git status
+ 3547  git rm --cached *.swp
+ 3548  git status
+ 3549  mv target-platform-steroids/ kura-steroids
+ 3550  git  add --all
+ 3551  git status
+ 3552  git commit -m "start"
+ 3553  git status
+ 3554  lsusb
+ 3555  ll
+ 3556  lsblk
+ 3557  lsusb
+ 3558  dmesg | grep NV
+ 3559  mesg
+ 3560  dmesg
+ 3561  blkid -c /dev/null
+ 3562  sudo blkid -c /dev/null
+ 3563  lsblk
+ 3564  dmesg | grep â€“i USB
+ 3565  dmesg | grep USB
+ 3566  lspci -v | grep HCI
+ 3567  modprobe usb-uhci
+ 3568  modprobe usb-ohci
+ 3569  sudo modprobe usb-uhci
+ 3570  sudo depmod -a
+ 3571  lsusb
+ 3572  ls
+ 3573  vim
+ 3574  vim pom.xml 
+ 3575  ls
+ 3576  vim
+ 3577  tree | grep swp
+ 3578  tree
+ 3579  ll
+ 3580  cd src/
+ 3581  ss
+ 3582  ll
+ 3583  cd ..
+ 3584  rm -r *.swp
+ 3585  ls
+ 3586  cd src/
+ 3587  ls
+ 3588  ll
+ 3589  cd ..
+ 3590  rm -r .*.swp
+ 3591  ls
+ 3592  find . -name '*.swp' -print0 | xargs -0 rm -i --
+ 3593  find . -name '*.swp' -print0 | xargs -0 rm --
+ 3594  vim
+ 3595  cd src/main/java/
+ 3596  ls
+ 3597  mv osgi org
+ 3598  cd org/
+ 3599  ls
+ 3600  mv rest/ ibm
+ 3601  cd ibm/
+ 3602  ls
+ 3603  mv example kura
+ 3604  ls
+ 3605  cd kura/
+ 3606  ls
+ 3607  cd ../../../
+ 3608  ls
+ 3609  cd ../../
+ 3610  l
+ 3611  sd ..
+ 3612  ls
+ 3613  cd ..
+ 3614  ls
+ 3615  mvn clean install
+ 3616  vim
+ 3617  cd src/main/java/org/ibm/kura/
+ 3618  ls
+ 3619  mkdir -p docker/test
+ 3620  mv *.java docker/test/
+ 3621  ls
+ 3622  cd ../../../../../
+ 3623  ls
+ 3624  cd ..
+ 3625  ls
+ 3626  ls
+ 3627  mvn clean install
+ 3628  curl -X POST http://127.0.0.1:9090/services/hello
+ 3629  lsusb
+ 3630  lsblk
+ 3631  vim pom.xml 
+ 3632  lsusb
+ 3633  lsblk
+ 3634  ll target/
+ 3635  vim ../bkp/v3/org.osgi.example/src/osgi/rest/example/ExampleResource.java 
+ 3636  mvn clean install
+ 3637  ll target/
+ 3638  vim ../bkp/v3/org.osgi.example/src/osgi/rest/example/ExampleResource.java 
+ 3639  mvn clean install
+ 3640  wst 
+ 3641  vim target/docker-test-1.0.0.jar 
+ 3642  mvn clean install
+ 3643  vim target/classes/META-INF/MANIFEST.MF 
+ 3644  mvn clean install
+ 3645  vim target/classes/META-INF/MANIFEST.MF 
+ 3646  mvn clean install
+ 3647  vim target/classes/META-INF/MANIFEST.MF 
+ 3648  mvn clean install
+ 3649  vim target/classes/META-INF/MANIFEST.MF 
+ 3650  mvn clean install
+ 3651  vim target/classes/META-INF/MANIFEST.MF 
+ 3652  mvn clean install
+ 3653  ll target/
+ 3654  mvn clean install
+ 3655  vim target/classes/META-INF/MANIFEST.MF 
+ 3656  mvn clean install
+ 3657  vim target/classes/META-INF/MANIFEST.MF 
+ 3658  mvn clean install
+ 3659  curl -X POST http://127.0.0.1:9090/services/hello
+ 3660  sudo vim /etc/default/docker
+ 3661  sudo service docker restart
+ 3662  ps aux | grep docker
+ 3663  curl -X POST http://127.0.0.1:9090/services/hello
+ 3664  docker images
+ 3665  docker rmi -f $(docker images -q)
+ 3666  sudo vim /etc/default/docker
+ 3667  sudo service docker restart
+ 3668  docker images
+ 3669  export DOCKER_HOST=tcp://localhost:2376
+ 3670  docker images
+ 3671  curl -X POST http://127.0.0.1:9090/services/hello
+ 3672  mvn clean install
+ 3673  ls
+ 3674  vim docker-java.properties 
+ 3675  docker images
+ 3676  source docker-java.properties 
+ 3677  docker images
+ 3678  vim docker-java.properties 
+ 3679  echo $DOCKER_CERT_PATH 
+ 3680  docker info
+ 3681  vim docker-java.properties 
+ 3682  curl -X POST http://127.0.0.1:9090/services/hello
+ 3683  docker --tlsverify
+ 3684  docker --tlsverify ps
+ 3685  vim docker-java.properties 
+ 3686  ls
+ 3687  cp docker-java.properties docker-env
+ 3688  vim docker-env 
+ 3689  source docker-env 
+ 3690  docker --tlsverify ps
+ 3691  docker images
+ 3692  cd /media/usb/
+ 3693  ls
+ 3694  cd -
+ 3695  cd /opt/
+ 3696  cd /media/michele/
+ 3697  ls
+ 3698  cd EBC0-394F/
+ 3699  ls
+ 3700  mkdir kura
+ 3701  cd kura/
+ 3702  ls
+ 3703  cp -r /opt/eclipse .
+ 3704  cd
+ 3705  dp
+ 3706  cd /media/michele/os-backups/
+ 3707  ls
+ 3708  mkdir kura
+ 3709  cd kura/
+ 3710  cp -r /opt/eclipse .
+ 3711  cp -r workspace .
+ 3712  cp -r ~/workspace .
+ 3713  vim
+ 3714  sudo minicom -b 115200 -o -D /dev/ttyUSB0 
+ 3715  oc
+ 3716  ocb
+ 3717  vim ~/.profile 
+ 3718  ./eth-to-wifi.sh 
+ 3719  ifconfig
+ 3720  nmap -sP 10.0.0.*
+ 3721  ssh ubuntu10.0.0.104
+ 3722  ssh ubuntu@10.0.0.104
+ 3723  ssh ubuntu@10.0.0.104
+ 3724  nmap -sP 10.0.0.*
+ 3725  ls
+ 3726  cd workspace/
+ 3727  cd java/
+ 3728  ls
+ 3729  cd org.ibm.kura/
+ 3730  ls
+ 3731  cd kura-steroids/
+ 3732  ls
+ 3733  cd ..
+ 3734  git status
+ 3735  vim docker-env 
+ 3736  ocb
+ 3737  xmp
+ 3738  ocb
+ 3739  cd ../../scripts/
+ 3740  ls
+ 3741  cd vim/
+ 3742  ls
+ 3743  cd ..
+ 3744  ls
+ 3745  cd cheat-sheets/
+ 3746  ls
+ 3747  vim bash-cheatsheet.sh 
+ 3748  cd ..
+ 3749  ls
+ 3750  tree
+ 3751  git add .
+ 3752  git commit -m "com"
+ 3753  git push
+ 3754  ock
+ 3755  ocg
+ 3756  vim test.bash
+ 3757  vim test.sh
+ 3758  ocb
+ 3759  vim ~/eth-to-wifi.sh 
+ 3760  ps aux | grep dhcp
+ 3761  sudo vim /etc/network/interfaces
+ 3762  vim /etc/dhcp/dhcpd.conf 
+ 3763  history | grep dhcp
+ 3764  history | grep isc
+ 3765  history | grep dh
+ 3766  history
+ 3767  history > test.log

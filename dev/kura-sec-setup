@@ -1,0 +1,96 @@
+#!/bin/bash -       
+#description     :SSL setup: both cert creation and docker daemon setup
+#author          :Michele Gazzetti
+#date            :27.06.16
+#notes           :
+#==============================================================================
+
+
+######
+#### Certificates setup
+######
+#source: https://github.com/docker-java/docker-java/tree/master/etc/certs
+#
+mkdir -p /opt/eclipse/kura/.docker/certs
+cd /opt/eclipse/kura/.docker/certs
+#
+echo 01 > ca.srl
+#
+cat << EOF > server-cert.txt
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+
+[req_distinguished_name]
+commonName = TypeCommonNameHere
+
+[v3_req]
+subjectAltName = @alt_names
+
+[alt_names]
+IP.1 = 127.0.0.1
+DNS.1 = localhost
+EOF
+#
+openssl genrsa -des3 -out ca-key.pem 2048
+#
+openssl req -new -x509 -days 3650 -key ca-key.pem -out ca.pem
+#
+openssl genrsa -des3 -out server-key.pem 2048
+#
+openssl req -new -key server-key.pem -out server.csr -config server-cert.txt
+#
+openssl x509 -req -days 3650 -in server.csr -CA ca.pem -CAkey ca-key.pem -out server-cert.pem -extensions v3_req -extfile server-cert.txt
+#
+openssl genrsa -des3 -out key.pem 2048
+#
+openssl req -subj '/CN=client' -new -key key.pem -out client.csr
+#
+echo extendedKeyUsage = clientAuth > extfile.cnf
+#
+openssl x509 -req -days 3650 -in client.csr -CA ca.pem -CAkey ca-key.pem -out cert.pem -extfile extfile.cnf
+#
+openssl rsa -in server-key.pem -out server-key.pem
+#
+openssl rsa -in key.pem -out key.pem
+
+####
+## Docker SSL configuration
+####
+mv /etc/default/docker /etc/default/docker.bkp
+
+cat << EOF | sudo tee  /etc/default/docker
+# Docker Upstart and SysVinit configuration file
+
+# Customize location of Docker binary (especially for development testing).
+#DOCKER="/usr/local/bin/docker"
+
+# Use DOCKER_OPTS to modify the daemon startup options.
+#DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4"
+#DOCKER_OPTS="--storage-driver=overlay -D"
+
+###
+# changed /lib/systemd/docker.service because docker started withut taking 
+# the parameters set in this file 
+# the old docker configurations is in /etc/default/docker
+# 
+# IMPORTANT: change --insercure-registry with local registry endpoint
+###
+
+DOCKER_OPTS="-H unix:///var/run/docker.sock -H tcp://127.0.0.1:2376 --insecure-registry 10.0.0.1:5000 --tlsverify --tlscacert=/opt/eclipse/kura/.docker/certs/ca.pem --tlscert=/opt/eclipse/kura/.docker/certs/server-cert.pem --tlskey=/opt/eclipse/kura/.docker/certs/server-key.pem --storage-driver=overlay"
+
+# If you need Docker to use an HTTP proxy, it can also be specified here.
+#export http_proxy="http://127.0.0.1:3128/"
+
+# This is also a handy place to tweak where Docker's temporary files go.
+#export TMPDIR="/mnt/bigdrive/docker-tmp"
+
+EOF
+
+mkdir -p ~/.docker
+
+ln -s /opt/eclipse/kura/.docker/certs/* ~/.docker/
+
+sudo service docker restart
+
+docker -H tcp://127.0.0.1:2376 --tlsverify version
