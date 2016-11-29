@@ -2,7 +2,7 @@
 #description     :
 #author          :Michele Gazzetti
 #date            :28.11.16
-#notes           :
+#notes           :tt
 #==============================================================================
 
 #need  curl
@@ -24,8 +24,8 @@ cd R-patched
 
 #export LDFLAGS='-L/home/'"$USER"'/local/lib/'
 
-LD_LIBRARY_PATH=/home/$USER/local
-
+LD_LIBRARY_PATH=/home/$USER/local ./configure --prefix=/home/$USER/local --with-x=no
 #https problem resolved adding ~/local to PATH
-./configure --prefix=/home/$USER/local --with-x=no
+make 
+make install
 
