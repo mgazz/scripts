@@ -6,13 +6,15 @@
 #==============================================================================
 
 
-#####
-### gcc
-######
+mkdir -p /home/$USER/local
+
+mkdir -p /tmp/compile
+
+cd /tmp/compile
 ##http://stackoverflow.com/questions/9450394/how-to-install-gcc-piece-by-piece-with-gmp-mpfr-mpc-elf-without-shared-libra
 wget http://www.netgull.com/gcc/releases/gcc-6.2.0/gcc-6.2.0.tar.bz2
 #
-extract gcc-6.2.0.tar.bz2
+tar xvzf gcc-6.2.0.tar.bz2
 #
 cd gcc-6.2.0/
 echo "
