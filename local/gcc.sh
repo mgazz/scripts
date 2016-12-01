@@ -14,7 +14,7 @@ cd /tmp/compile
 ##http://stackoverflow.com/questions/9450394/how-to-install-gcc-piece-by-piece-with-gmp-mpfr-mpc-elf-without-shared-libra
 wget http://www.netgull.com/gcc/releases/gcc-6.2.0/gcc-6.2.0.tar.bz2
 #
-tar xvzf gcc-6.2.0.tar.bz2
+tar xvjf gcc-6.2.0.tar.bz2
 #
 cd gcc-6.2.0/
 echo "
@@ -95,9 +95,9 @@ cd objdir/
 #
 unset LIBRARY_PATH CPATH C_INCLUDE_PATH PKG_CONFIG_PATH CPLUS_INCLUDE_PATH INCLUDE LD_LIBRARY_PATH
 #
-$PWD/../gcc-6.2.0/configure --prefix=/home/$USER/local --disable-multilib --enable-languages=c,c++
+$PWD/../gcc-6.2.0/configure --prefix=/home/$USER/local --enable-shared --with-pic --disable-multilib --enable-languages=c,c++,go,java
 
-make
+make -j 4
 
 make install
 #
