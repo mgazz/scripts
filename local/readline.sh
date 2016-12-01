@@ -1,3 +1,8 @@
+mkdir -p /home/$USER/local
+
+mkdir -p /tmp/compile
+
+cd /tmp/compile
 
 wget https://ftp.gnu.org/gnu/readline/readline-7.0.tar.gz
 #
