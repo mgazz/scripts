@@ -2,7 +2,7 @@
 #description     :
 #author          :Michele Gazzetti
 #date            :29.11.16
-#notes           :
+#notes           :to uninstall-> make uninstall 
 #==============================================================================
 
 
