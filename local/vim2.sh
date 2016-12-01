@@ -30,23 +30,22 @@ make
 make install
 
 # autoload plugin
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-color_path="$HOME/.vim/conf/colors.vim"
+#color_path="$HOME/.vim/conf/colors.vim"
 
-if [[ $(cat "$color_path" | grep "colorscheme") != "" ]]; then
-    echo change
-    sed -i 's/colorscheme/"colorscheme/' "$color_path"
-fi
+#if [[ $(cat "$color_path" | grep "colorscheme") != "" ]]; then
+    #echo change
+    #sed -i 's/colorscheme/"colorscheme/' "$color_path"
+#fi
 
-vim -c "call CommandLinePlugInstall()"
+#vim -c "call CommandLinePlugInstall()"
 
-/home/$USER/.vim/plugged/YouCompleteMe/install.sh --clang-completer
+#/home/$USER/.vim/plugged/YouCompleteMe/install.sh --clang-completer
 
 #re-activate colorscheme
-sed -i 's/"colorscheme/colorscheme/' "$color_path"
+#sed -i 's/"colorscheme/colorscheme/' "$color_path"
 
 echo 'to uninstall cd /tmp/compile/vim && make uninstall'
 
-echo 'source ~/.profile.'
 

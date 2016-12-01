@@ -1,7 +1,7 @@
 #!/bin/bash -       
 #description     :
 #author          :Michele Gazzetti
-#date            :29.11.16
+#date            :28.11.16
 #notes           :
 #==============================================================================
 
@@ -12,17 +12,14 @@ mkdir -p /tmp/compile
 
 cd /tmp/compile
 
-wget https://www.openssl.org/source/openssl-1.0.2j.tar.gz
+wget http://www.zlib.net/zlib-1.2.8.tar.gz
 #
-tar xvzf openssl-1.0.2j.tar.gz
+tar xvzf zlib-1.2.8.tar.gz
 #
-cd openssl-1.0.2j/
+cd zlib-1.2.8
 #
-export CFLAGS="-fPIC"
+./configure --prefix=/home/$USER/local
 
-./config shared --prefix=/home/$USER/local
-#./config --prefix=/home/$USER/local
-#
 make
 #
 make install
