@@ -1,5 +1,5 @@
 #!/bin/bash -       
-#description     :eclipse setup
+#description     : java setup
 #author          :Michele Gazzetti
 #date            :27.06.16
 #notes           :
@@ -17,6 +17,8 @@ write_variable(){
 
     echo "export $1=$2" >> ~/.profile
 }
+
+
 write_slash_bin(){
     #delete PATH=$VARIABLE/bin...
     presence=$(cat ~/.profile | grep "PATH=\$$1" )
@@ -33,21 +35,11 @@ write_variable_bin(){
     write_variable $1 $2
     write_slash_bin $1
 }
+#download java jkd
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-linux-x64.tar.gz" -P /tmp
 
-#JAVA_WORKSPACE="/home/$USER/workspace/java"
-if [[ ! -v JAVA_WORKSPACE ]]; then
-    echo "Set JAVA_WORKSPACE"
-    exit 1
-fi
+sudo tar xzf /tmp/jdk-7u79-linux-x64.tar.gz -C /opt
 
+#tar xzf jdk-7u79-linux-x64.tar.gz -C /opt
 
-mkdir -p $JAVA_WORKSPACE
-wget http://eclipse.mirror.rafal.ca/technology/epp/downloads/release/mars/2/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz -P /tmp
-#
-sudo tar xzf /tmp/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz -C /opt/
-#
-write_variable ECLIPSE_HOME /opt/eclipse
-echo "PATH=\$ECLIPSE_HOME:\$PATH" >> ~/.profile
-# Kura dev workspace
-wget https://s3.amazonaws.com/kura_downloads/user_workspace/release/1.4.0/user_workspace_archive_1.4.0.zip -P "$JAVA_WORKSPACE"
-#rm user_workspace_archive_1.4.0.zip
+write_variable_bin JAVA_HOME /opt/jdk1.7.0_79

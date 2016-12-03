@@ -45,10 +45,9 @@ write_variable_bin(){
 #
 wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz -P /tmp
 #
-tar xvzf /tmp/apache-maven-3.3.9-bin.tar.gz -C /home/$USER/sw
+sudo tar xzf /tmp/apache-maven-3.3.9-bin.tar.gz -C /opt/
 
 write_variable M2_REPO /home/"$USER"/.m2/repository
-
-write_variable_bin M2_HOME /home/$USER/sw/apache-maven-3.3.9
+write_variable_bin M2_HOME /opt/apache-maven-3.3.9
 
 echo "exe: source ~/.profile"
