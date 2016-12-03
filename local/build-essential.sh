@@ -16,6 +16,8 @@ wget http://security.ubuntu.com/ubuntu/pool/main/b/build-essential/build-essenti
 
 #
 tar xvzf build-essential_12.1ubuntu2.tar.gz
+
+cd build-essential-12.2ubuntu2
 #
 ./configure --prefix=/home/$USER/local
 #

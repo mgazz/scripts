@@ -9,9 +9,16 @@
 ######
 ### ansible to finish
 ######
-git clone git://github.com/ansible/ansible.git --recursive
+#mkdir -p /tmp/compile
+
+#cd /tmp/compile
+
+#git clone git://github.com/ansible/ansible.git --recursive
 #
-cd ansible/
-#
-pip install --install-option="--prefix=/home/$USER/local" ansible
+#cd ansible/
+
+export LD_LIBRARY_PATH="/home/$USER/local/lib64:/home/$USER/local/lib"
+
+# gloabal option for centos
+pip install --global-option=build_ext --global-option="-I/home/$USER/local/lib/libffi-3.2.1/include" --install-option="--prefix=/home/$USER/local" ansible
 

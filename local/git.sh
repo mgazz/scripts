@@ -14,7 +14,9 @@ cd /tmp/compile
 
 git clone https://github.com/git/git.git
 
-cd vim
+cd git
+
+export NO_PERL=YesPlease
 
 ./configure --prefix=/home/$USER/local \
     --enable-gui=gnome2 \
