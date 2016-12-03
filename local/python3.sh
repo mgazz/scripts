@@ -9,6 +9,10 @@
 ####
 ## python 3
 ####
+mkdir -p /tmp/compile/
+
+cd /tmp/compile/
+
 wget https://www.python.org/ftp/python/3.6.0/Python-3.6.0b4.tar.xz
 #
 tar xvfJ Python-3.6.0b4.tar.xz
@@ -38,7 +42,7 @@ tar xvfJ Python-2.7.12.tar.xz
 #
 cd Python-2.7.12/
 #
-./configure --prefix=/home/$USER/local --enable-optimizations
+./configure --prefix=/home/$USER/local --enable-optimizations --enable-shared --with-system-expat --with-system-ffi --enable-unicode=ucs4
 
 echo "
 SSL=/home/$USER/local/ssl
@@ -51,3 +55,13 @@ make -j 4
 #
 make install
 #
+
+###
+## pip
+####
+cd /tmp/compile/
+#
+wget https://bootstrap.pypa.io/get-pip.py
+#
+python get-pip.py
+
