@@ -17,9 +17,9 @@ wget https://curl.haxx.se/download/curl-$VERSION.tar.gz
 
 cd curl-$VERSION/
 
-tar xvzf curl-$version.tar.gz
+tar xvzf curl-$VERSION.tar.gz
 
-cd curl-$version
+cd curl-$VERSION
 
 ./configure --prefix=/home/$USER/local --with-ssl
 
