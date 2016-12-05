@@ -35,19 +35,19 @@ write_variable_bin(){
 }
 
 #JAVA_WORKSPACE="/home/$USER/workspace/java"
-if [[ ! -v JAVA_WORKSPACE ]]; then
-    echo "Set JAVA_WORKSPACE"
-    exit 1
-fi
+#if [[ ! -v JAVA_WORKSPACE ]]; then
+#    echo "Set JAVA_WORKSPACE"
+#    exit 1
+#fi
 
 
-mkdir -p $JAVA_WORKSPACE
+#mkdir -p $JAVA_WORKSPACE
 wget http://eclipse.mirror.rafal.ca/technology/epp/downloads/release/mars/2/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz -P /tmp
 #
-sudo tar xzf /tmp/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz -C /opt/
+tar xzf /tmp/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz -C /home/$USER/sw
 #
-write_variable ECLIPSE_HOME /opt/eclipse
+write_variable ECLIPSE_HOME /home/$USER/sw/eclipse
 echo "PATH=\$ECLIPSE_HOME:\$PATH" >> ~/.profile
 # Kura dev workspace
-wget https://s3.amazonaws.com/kura_downloads/user_workspace/release/1.4.0/user_workspace_archive_1.4.0.zip -P "$JAVA_WORKSPACE"
+#wget https://s3.amazonaws.com/kura_downloads/user_workspace/release/1.4.0/user_workspace_archive_1.4.0.zip -P "$JAVA_WORKSPACE"
 #rm user_workspace_archive_1.4.0.zip

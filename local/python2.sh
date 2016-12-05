@@ -31,6 +31,6 @@ cd /tmp/compile/
 #
 wget https://bootstrap.pypa.io/get-pip.py
 #
-python get-pip.py
+/home/common/local/bin/python get-pip.py --user
 
 
