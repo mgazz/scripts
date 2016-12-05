@@ -17,6 +17,8 @@
 #
 #cd ansible/
 
+./asciidoc.sh
+
 export LD_LIBRARY_PATH="/home/$USER/local/lib64:/home/$USER/local/lib"
 
 # gloabal option for centos
