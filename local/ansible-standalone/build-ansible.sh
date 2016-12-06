@@ -12,6 +12,7 @@ PREFIX_DIR="$BASE_DIR/local"
 ###  libssl
 ######
  
+./get-sources.sh
 #
 #
 cd openssl-1.0.2j/
