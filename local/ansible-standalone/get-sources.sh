@@ -11,7 +11,7 @@ if [[ ! -d  "./openssl-1.0.2j" ]]; then
     tar xvzf openssl-1.0.2j.tar.gz
     rm openssl-1.0.2j.tar.gz
 else
-    echo OPENSSL ALREADY PRESENT
+    echo OPENSSL PRESENT
 fi
 
 if [[ ! -d "./Python-2.7.12" ]]; then
@@ -19,7 +19,7 @@ if [[ ! -d "./Python-2.7.12" ]]; then
     tar xvfJ Python-2.7.12.tar.xz
     rm Python-2.7.12.tar.xz
 else
-    echo PYTHON ALREADY PRESENT
+    echo PYTHON PRESENT
 fi
 if [[ ! -f "./get-pip.py" ]]; then
     wget https://bootstrap.pypa.io/get-pip.py
@@ -29,14 +29,14 @@ if [[ ! -d "./asciidoc-8.6.9" ]]; then
     tar xvzf asciidoc-8.6.9.tar.gz
     rm asciidoc-8.6.9.tar.gz
 else
-    echo ASCII ALREADY PRESENT
+    echo ASCII PRESENT
 fi
 if [[ ! -d "./libffi-3.2.1" ]]; then
     wget ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
     tar xvzf libffi-3.2.1.tar.gz
     rm libffi-3.2.1.tar.gz
 else
-    echo LIBFFI ALREADY PRESENT
+    echo LIBFFI PRESENT
 fi
 if [[ ! -d "./ansible" ]]; then
     git clone https://github.com/ansible/ansible.git

@@ -20,7 +20,6 @@ cd openssl-1.0.2j/
 export CFLAGS="-fPIC"
 
 ./config shared --prefix=$PREFIX_DIR
-#./config --prefix=/home/$USER/local
 #
 make
 #
@@ -40,8 +39,8 @@ cd Python-2.7.12/
 echo "
 SSL=$PREFIX_DIR/ssl
 _ssl _ssl.c \
-	                -DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl \
-			                            -L$(SSL)/lib -lssl -lcrypto
+	-DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl \
+	-L$(SSL)/lib -lssl -lcrypto
 " >> Modules/Setup.dist
 #
 make -j 4
@@ -62,9 +61,8 @@ cd $BASE_DIR
 #
 #
 cd libffi-3.2.1
-#
-sed -e '/^includesdir/ s/$(libdir).*$/$(includedir)/'     -i include/Makefile.in 
-sed -e '/^includedir/ s/=.*$/=@includedir@/'     -e 's/^Cflags: -I${includedir}/Cflags:/'     -i libffi.pc.in
+sed -e '/^includesdir/ s/$(libdir).*$/$(includedir)/' -i include/Makefile.in 
+sed -e '/^includedir/ s/=.*$/=@includedir@/' -e 's/^Cflags: -I${includedir}/Cflags:/' -i libffi.pc.in
 ./configure --prefix=$PREFIX_DIR --disable-static
 #
 make -j 4
@@ -82,7 +80,6 @@ cd $BASE_DIR
 #
 #
 cd asciidoc-8.6.9/
-#
 ./configure --prefix=$PREFIX_DIR --sysconfdir=$PREFIX_DIR/etc
 #
 make
@@ -103,10 +100,10 @@ chmod +x ./ansible/hacking/env-setup
 ### ansible to finish
 ######
 
-export LD_LIBRARY_PATH="$PREFIX_DIR/lib64:$PREFIX_DIR/lib"
+#export LD_LIBRARY_PATH="$PREFIX_DIR/lib64:$PREFIX_DIR/lib"
 
 export PKG_CONFIG_PATH=$PREFIX_DIR/lib/pkgconfig
 
 # gloabal option for centos
+#/home/$USER/.local/bin/pip install --global-option=build_ext --global-option="-I$PREFIX_DIR/include" --install-option="--prefix=$PREFIX_DIR" urllib3 --upgrade
 /home/$USER/.local/bin/pip install --global-option=build_ext --global-option="-I$PREFIX_DIR/include" --install-option="--prefix=$PREFIX_DIR" ansible
-
