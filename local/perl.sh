@@ -1,6 +1,4 @@
 
-mkdir -p /tmp/compile
-
 cd /tmp/compile/
 #
 wget http://www.cpan.org/src/5.0/perl-5.24.0.tar.gz
