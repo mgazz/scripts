@@ -18,6 +18,7 @@ cd vim
 ./configure --prefix=/home/$USER/local \
     --enable-gui=gnome2 \
     --with-features=huge \
+    --enable-gui=auto \
     --enable-cscope \
     --enable-multibyte \
     --enable-rubyinterp \
