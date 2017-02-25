@@ -20,7 +20,9 @@ mkdir -p /home/$USER/local
 
 git clone https://github.com/vim/vim.git /tmp/vim
 
-/tmp/vim/configure --prefix=/home/$USER/local \
+cd /tmp/vim
+
+./configure --prefix=/home/$USER/local \
     --enable-gui=gnome2 \
     --with-features=huge \
     --enable-cscope \
@@ -28,10 +30,12 @@ git clone https://github.com/vim/vim.git /tmp/vim
     --enable-luainterp \
     --enable-rubyinterp \
     --enable-pythoninterp \
-    --with-python-config-dir=$PY_CONF_DIR \
+    --with-python-config-dir=$PY_CONF_DIR\
     --with-tlib=ncurses 
 
-make install -C /tmp/vim/
+make install
+
+cd -
 
 mkdir -p ~/.vim/bundle
 
