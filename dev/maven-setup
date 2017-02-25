@@ -5,6 +5,7 @@
 #notes           :
 #==============================================================================
 
+SW_LOCATION=/home/$USER/sw
 
 write_variable(){
     presence=$(cat ~/.profile | grep "export $1" )
@@ -45,9 +46,10 @@ write_variable_bin(){
 #
 wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz -P /tmp
 #
-sudo tar xzf /tmp/apache-maven-3.3.9-bin.tar.gz -C /opt/
+mkdir -p $SW_LOCATION
+sudo tar xzf /tmp/apache-maven-3.3.9-bin.tar.gz -C $SW_LOCATION
 
 write_variable M2_REPO /home/"$USER"/.m2/repository
-write_variable_bin M2_HOME /opt/apache-maven-3.3.9
+write_variable_bin M2_HOME $SW_LOCATION/apache-maven-3.3.9
 
 echo "exe: source ~/.profile"

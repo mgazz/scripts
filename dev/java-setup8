@@ -5,6 +5,7 @@
 #notes           :
 #==============================================================================
 
+SW_LOCATION=/home/$USER/sw
 
 write_variable(){
     presence=$(cat ~/.profile | grep "export $1" )
@@ -40,10 +41,10 @@ write_variable_bin(){
 #http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz
 wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz" -P /tmp
 
-mkdir /home/$USER/sw
+mkdir -p $SW_LOCATION
 
-tar xvzf /tmp/jdk-8u101-linux-x64.tar.gz -C /home/$USER/sw
+tar xvzf /tmp/jdk-8u101-linux-x64.tar.gz -C $SW_LOCATION
 
 #tar xzf jdk-7u79-linux-x64.tar.gz -C /opt
 
-write_variable_bin JAVA_HOME /home/$USER/sw/jdk1.8.0_101
+write_variable_bin JAVA_HOME $SW_LOCATION/jdk1.8.0_101
