@@ -1,0 +1,57 @@
+#!/bin/bash -       
+#description     :eclipse setup
+#author          :Michele Gazzetti
+#date            :27.06.16
+#notes           :
+#==============================================================================
+
+SW_LOCATION=/home/$USER/sw
+
+write_variable(){
+    presence=$(cat ~/.profile | grep "export $1" )
+
+    # if not present of comment --> add variable
+    if [[ $presence != "" && $presence != "#*" ]]; then
+        sed /"export $1"/d ~/.profile > .profile
+        mv .profile ~/.profile
+    fi
+
+    echo "export $1=$2" >> ~/.profile
+}
+write_slash_bin(){
+    #delete PATH=$VARIABLE/bin...
+    presence=$(cat ~/.profile | grep "PATH=\$$1" )
+
+    if [[ $presence != "" && $presence != "#*" ]]; then
+        sed /"PATH=\$$1"/d ~/.profile  > .profile
+        mv .profile ~/.profile
+    fi
+    echo "PATH=\$$1/bin:\$PATH" >> ~/.profile
+    #cat ~/.profile
+}
+
+write_variable_bin(){
+    write_variable $1 $2
+    write_slash_bin $1
+}
+
+#JAVA_WORKSPACE="/home/$USER/workspace/java"
+if [[ ! -v JAVA_WORKSPACE ]]; then
+    echo "Set JAVA_WORKSPACE"
+    exit 1
+fi
+
+
+mkdir -p $JAVA_WORKSPACE
+
+mkdir -p $SW_LOCATION
+wget http://eclipse.mirror.rafal.ca/technology/epp/downloads/release/mars/2/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz -P /tmp
+#
+sudo tar xzf /tmp/eclipse-jee-mars-2-linux-gtk-x86_64.tar.gz -C $SW_LOCATION
+#
+write_variable ECLIPSE_HOME $SW_LOCATION/eclipse
+
+echo "PATH=\$ECLIPSE_HOME:\$PATH" >> ~/.profile
+# Kura dev workspace
+wget https://s3.amazonaws.com/kura_downloads/user_workspace/release/1.4.0/user_workspace_archive_1.4.0.zip -P "$JAVA_WORKSPACE"
+#rm user_workspace_archive_1.4.0.zip

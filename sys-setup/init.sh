@@ -24,6 +24,8 @@ sudo apt-get install rxvt-unicode-256color \
     python-dev \
     cmake \
     libncurses-dev \
+    vagrant \
+    ansible \
     vim -y
 
 git clone https://github.com/mgazz/dotfiles.git /home/$USER/dotfiles
