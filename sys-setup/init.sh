@@ -16,6 +16,7 @@ sudo apt-get  update
 
 sudo apt-get install rxvt-unicode-256color \
     i3 \
+    trash-cli \
     scrot \
     tmux \
     spotify-client \
