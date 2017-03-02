@@ -1,0 +1,21 @@
+#!/bin/bash -       
+#description     :
+#author          :Michele Gazzetti
+#date            :01.03.17
+#notes           :
+#==============================================================================
+
+### install rainbow stream
+#
+sudo apt-get install python-pip
+#
+pip install --upgrade pip
+#
+sudo pip install rainbowstream
+#
+rainbowstream
+# config HOME_TWEET_NUM = 20
+#
+
+
+

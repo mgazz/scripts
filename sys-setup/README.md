@@ -16,3 +16,10 @@ After that:
 ./maven-setup*
 
 ```
+
+TODO:
+vagrant
+vagrant plugin install vagrant-cachier
+virtualbox
+trash-cli
+compose
