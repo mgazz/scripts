@@ -1,0 +1,55 @@
+#!/bin/bash -       
+#description     : maven setup
+#author          :Michele Gazzetti
+#date            :27.06.16
+#notes           :
+#==============================================================================
+
+SW_LOCATION=/home/$USER/sw
+
+write_variable(){
+    presence=$(cat ~/.bash_profile | grep "export $1" )
+
+    # if not present of comment --> add variable
+    if [[ $presence != "" && $presence != "#*" ]]; then
+        sed /"export $1"/d ~/.bash_profile > .bash_profile
+        mv .bash_profile ~/.bash_profile
+    fi
+
+    echo "export $1=$2" >> ~/.bash_profile
+}
+
+
+write_slash_bin(){
+    #delete PATH=$VARIABLE/bin...
+    presence=$(cat ~/.bash_profile | grep "PATH=\$$1" )
+
+    if [[ $presence != "" && $presence != "#*" ]]; then
+        sed /"PATH=\$$1"/d ~/.bash_profile  > .bash_profile
+        mv .bash_profile ~/.bash_profile
+    fi
+    echo "PATH=\$$1/bin:\$PATH" >> ~/.bash_profile
+    #cat ~/.bash_profile
+}
+
+write_variable_bin(){
+    write_variable $1 $2
+    write_slash_bin $1
+}
+
+###
+## Maven setup  version: 3.3.9
+###
+
+#TODO: pass version as parameter
+
+#
+wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz -P /tmp
+#
+mkdir -p $SW_LOCATION
+sudo tar xzf /tmp/apache-maven-3.3.9-bin.tar.gz -C $SW_LOCATION
+
+write_variable M2_REPO /home/"$USER"/.m2/repository
+write_variable_bin M2_HOME $SW_LOCATION/apache-maven-3.3.9
+
+echo "exe: source ~/.bash_profile"

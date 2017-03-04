@@ -1,0 +1,47 @@
+#!/bin/bash -       
+#description     : java setup
+#author          :Michele Gazzetti
+#date            :27.06.16
+#notes           :
+#==============================================================================
+
+
+write_variable(){
+    presence=$(cat ~/.bash_profile | grep "export $1" )
+
+    # if not present of comment --> add variable
+    if [[ $presence != "" && $presence != "#*" ]]; then
+        sed /"export $1"/d ~/.bash_profile > .bash_profile
+        mv .bash_profile ~/.bash_profile
+    fi
+
+    echo "export $1=$2" >> ~/.bash_profile
+}
+
+
+write_slash_bin(){
+    #delete PATH=$VARIABLE/bin...
+    presence=$(cat ~/.bash_profile | grep "PATH=\$$1" )
+
+    if [[ $presence != "" && $presence != "#*" ]]; then
+        sed /"PATH=\$$1"/d ~/.bash_profile  > .bash_profile
+        mv .bash_profile ~/.bash_profile
+    fi
+    echo "PATH=\$$1/bin:\$PATH" >> ~/.bash_profile
+    #cat ~/.bash_profile
+}
+
+write_variable_bin(){
+    write_variable $1 $2
+    write_slash_bin $1
+}
+
+mkdir -p /home/$USER/sw
+#download java jkd
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-linux-x64.tar.gz" -P /tmp
+
+tar xvzf /tmp/jdk-7u79-linux-x64.tar.gz -C /home/$USER/sw
+
+#tar xzf jdk-7u79-linux-x64.tar.gz -C /opt
+
+write_variable_bin JAVA_HOME /home/$USER/sw/jdk1.7.0_79
