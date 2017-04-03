@@ -30,13 +30,20 @@ sudo rpm -Uvh vagrant_1.9.2_x86_64.rpm
 sudo yum install epel-release
 #
 sudo yum install -y ansible
+
+###
 # trash-cli
+###
 git clone https://github.com/andreafrancia/trash-cli.git
 #
 cd trash-cli/
 #
 python setup.py install --user
 #
+
+###
+# IntelliJ
+###
 VERSION=2016.3.4
 #
 wget http://download.jetbrains.com/idea/ideaIC-$VERSION.tar.gz
@@ -53,8 +60,6 @@ git clone https://github.com/y3sh/Intellij-Colors-Sublime-Monokai.git
 # Intellij -> File -> Import Settings -> Select Jar
 # Select Sublime Monokai as the theme in Settings -> Editor -> Colors & Fonts
 
-
-
 #######
 #######
 #######
@@ -70,11 +75,7 @@ sudo yum install tree -y
 sudo yum install htop cmake libncurses-dev -y
 #
 # no ncurses and htop libncurses no package
-sudo yum install gcc -y
-sudo yum install python-devel
-sudo yum install gcc-c++
-sudo yum install ncurses-devel
-#
+sudo yum install gcc python-devel gcc-c++ ncurses-devel libXt-devel -y 
 ./configure --prefix=/home/$USER/local \
     --enable-gui=gnome2 \
     --with-features=huge \
@@ -88,7 +89,6 @@ sudo yum install ncurses-devel
 #
 sudo yum search libxt
 #
-sudo yum install libXt-devel
 #
 make
 #
@@ -121,7 +121,7 @@ sudo chmod 0644 1ibm-openclient-hourly
 cd /tmp/
 #
 ###
-## install htop
+## install htop and other stuff
 ###
 wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
 #
